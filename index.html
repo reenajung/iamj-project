@@ -44,8 +44,8 @@
   <!--SECTION 1-->  
   <div class="section-110 main-container">
     <div class="uk-container uk-container-xlarge">    
-      <iframe src="https://player.vimeo.com/video/870174332?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1280" height="720" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay"></iframe>
-      <!--video src="mp4/section1.mp4" width="1280" height="720" loop muted playsinline autoplay uk-video="autoplay: inview"></video-->
+      <iframe src="https://player.vimeo.com/video/870174332?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1" width="1280" height="720" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay" uk-video="automute: true autoplay: inview"></iframe>
+      <!--video class="step1-video" src="mp4/section1.mp4" width="1280" height="720" loop muted playsinline autoplay uk-video="autoplay: inview"></video-->
      </div>
   </div>
   
@@ -59,9 +59,9 @@
     <!--SECTION 2-->
     <div class="section-main uk-section-expand">
       <div class="scroll-text scroll-width">
-          <div class="step-video">
+          <div class="step2-video">
               <!--video src="mp4/section2.mp4" loop muted playsinline autoplay uk-video="autoplay: inview" width="auto" height="720px"></video-->
-              <iframe uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;" src="https://player.vimeo.com/video/870174498?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1920" height="720" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay"></iframe>
+              <iframe src="https://player.vimeo.com/video/870174498?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1" width="1920" height="720" frameborder="0" allowfullscreen="" uk-responsive=""  allow="autoplay" uk-video="automute: true autoplay: inview"></iframe>
               <p class="step-txt" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 800;">
               MZ는 다르다. ‘힙하게’ 다르다. 어느 하나 힙하지 않은 구석이 없다.<br>
               힙한 것들의 공통점은 ‘취향의 남다름’. MZ들은 폰 케이스 하나를 선택해도 남다른데,<br>
@@ -82,7 +82,7 @@
           </div>  
         </div>
         </div>
-    </div>
+    
       
     <!--SECTION 3-->  
       <div class="section-main uk-container-expand">               
@@ -110,10 +110,8 @@
       </div>
 
     <!--SECTION 5-->  
-      <div class="uk-container-expand section-main">
-        <p class="uk-margin-medium-top" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 200;">
+      <div class="uk-container-expand section-main step5-tit">
           <img src="images/SECTION 5-subtitle.png" width="706px" uk-scrollspy="cls: uk-animation-slide-bottom-small; delay: 300; repeat: true" preload="none" style="" class="uk-scrollspy-inview">
-        </p>
       </div>
   </div> 
 
@@ -132,7 +130,7 @@
             responsive: [{
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 4
+                    slidesToShow: 6
                 }
             }, {
                 breakpoint: 480,
