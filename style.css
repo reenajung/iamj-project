@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');font-family: 'Montserrat', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;700&display=swap');
 
 
 /*공통*/
-*{ box-sizing: border-box;	user-select: none;margin: 0;padding: 0;}
+* { box-sizing: border-box;	user-select: none;margin: 0;padding: 0;}
 ul,ol{list-style: none;} 
-a {color: #fff; text-decoration: none;} 
+a {color: #ffffff; text-decoration:none !important }
+a:hover { text-decoration:none !important }
 body {margin: 0;padding: 0;	width: 100%;min-height: 100vh;background: #000000;	text-transform: uppercase;}
 html { 	font-size: 18px; color: #000; letter-spacing: -0.03rem; background-color: #000;}
 body, h1, h2 { 
@@ -73,7 +74,6 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	
 }
 .scene-img{
 	max-width: 100vw;
@@ -115,8 +115,15 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
     padding-right: 430px;
     padding-top: 150px;
 }
-.step5-tit >img{margin-top: 162px;}
+.step5-tit >img{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding-top: 162px;}
 .step3-video{ margin-top: 358px; position: relative;}
+.step9-img{}
+.height1400{width:auto;  height: 1400px;}
 
 /* Slider */
 .case-slider { margin-top: 198px;}
@@ -194,79 +201,137 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    }
-    .flex-item01{
-    width:500px;
-    height: 600px;}
-  
-    .flex-item02{
-    width:1027px;
-    height: 1230px; 
-    margin-top: 30px;}
-  
-    .flex-container > .flex-item01 > img{
-    
-  }
-.shopImgBig{ 
-    position:relative;
-    width: 100%;
-    margin: 0 auto;
 }
-
+   
 .uk-flex{display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     flex-direction: row;}
 
-.tootip{position: relative;
-}
-.tootip h2 {
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    transition: 0.3s;
-}
-.content{
-    width: 400px;
-    background-color: rgba(100, 100, 100, 0.8);
-    padding: 20px;
-    position: absolute;
-    top:-65%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    border-radius: 5px;
-    visibility: hidden;
-    opacity: 0;
+/*섹션6 show hide*/
+
+button.uk-button.uk-button-default.popup_a {
+    border: hidden;}
+
+.content-pop{
+	position: relative;
+	background: rgba(100, 100, 100, 0.8);
+	border-radius: .4em;
     transition: all .2s;
 }
 
-.content h3{
+.content-pop:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 20%;
+	width: 0;
+	height: 0;
+	border: 13px solid transparent;
+	border-bottom-color: rgba(100, 100, 100, 0.8);
+	border-top: 0;
+	margin-left: -13px;
+	margin-top: -13px;
+}
+.content-pop p {
     text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 10px;
+    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
+    color: #ffffff;
+    line-height: 1; 
+    padding: 10px;
 }
-.content p{
-    line-height: 1.4;
+.product01{
+    width: 530px!important;
+    padding: 15px!important;
 }
 
-.content::before{
-    content: "";
+.product02{
+    width:1057px!important;
+    padding: 15px!important;
+    margin-top: 15px!important;
+}
+.product03{
+    width: 530px!important;
+    padding: 15px!important;
+    margin-top: 15px!important;
+}
+.product05{
+    width:1057px!important;
+    padding: 15px!important; 
+}
+.product06{
+    width: 423px!important;
+    padding: 15px!important; 
+}
+.popup1{
     position: absolute;
-    width: 25px;
-    height:25px;
-    background-color: rgba(100, 100, 100, 0.8);
-    bottom: 0;
-    left:50%;
-    transform: rotate(45deg) translateY(50%);
+    top: 462px !important;
+    left: 196px !important;
+    width: 266px !important;
 }
 
-h2:active+.content{
-    visibility: visible;
-    opacity: 1;
-    
+.popup2{
+    position: absolute;
+    top: 703px !important;
+    left: 586px !important;
+    width: 266px !important;
+}
+
+.popup3{
+    position: absolute;
+    top: 352px !important;
+    left: 322px !important;
+    width: 266px !important;
+}
+
+.popup4{
+    position: absolute;
+    top: 242px !important;
+    left: 691px !important;
+    width: 204px !important;
+}
+
+.popup5{
+    position: absolute;
+    top: 1065px !important;
+    left: 378px !important;
+    width: 204px !important;
+}
+
+.popup6{
+    position: absolute;
+    top: 371px !important;
+    left: 61px !important;
+    width: 204px !important;
+}
+.popup7{
+    position: absolute;
+    top: 318px !important;
+    left: 639px !important;
+    width: 204px !important;
+}
+.popup8{
+    position: absolute;
+    top: 279px !important;
+    left: 1016px !important;
+    width: 204px !important;
 }
 
 
+/*foot 타이포 슬라이드 */
+#content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
+.viewBox{ width: 100%; height: 360px;}
+.slideBox{ width: 200%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
+.leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
+.slideItem{ font-size: 2.5rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 5px;}
+
+@keyframes flowText {
+    0% {transform: translateX(0);}
+    100%{transform: translateX(-50%);}    
+}
 
 
 @media (max-width: 1024px) {
@@ -316,14 +381,14 @@ h2:active+.content{
     .case-slider { margin-top: 60px}
     .slide > img{width: 65%;}
     .scene-img { max-width: 100vw;}
-    .step5-tit >img {max-width:50% ; margin-top: 50px; }
+    .step5-tit >img {max-width:43% ; margin-top:30px; }
     .motion-e { position: absolute; top: 200px; right: 41px;  bottom: 0; padding-right: 31px;  width: 16%;  }
     .motion-m { position: absolute; top: 0; left: 35px; padding-left: 22px; padding-top: 194px; width: 18%;}   
     .motion-this {position: absolute; top: 0; left: 150px; padding-top: 83px;}
     .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
-
-    .uk-flex {display: flex; flex-direction: column; flex-wrap: nowrap;justify-content: center;}
- 
+    .height1400{height: 600px;}
+    .slideItem{ font-size:1rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 1px;}
+    .viewBox { width: 100%; height: 70px;}
     }
