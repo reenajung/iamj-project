@@ -1,52 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&display=swap');font-family: 'Montserrat', sans-serif;
 
 
-* {
-	box-sizing: border-box;
-	user-select: none;
-	margin: 0;
-	padding: 0;
-  }
-
-  ul, ol {
-	list-style: none;
-  }
-  
-  a {
-	color: #fff;
-	text-decoration: none;
-  }
-  
-  body {
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	min-height: 100vh;
-	background: #000000;
-	text-transform: uppercase;
-  }
-  
-
-html { 
-	font-size: 18px; 
-	color: #000; 
-	letter-spacing: -0.03rem; 
-	background-color: #000;
-}
+/*공통*/
+*{ box-sizing: border-box;	user-select: none;margin: 0;padding: 0;}
+ul,ol{list-style: none;} 
+a {color: #fff; text-decoration: none;} 
+body {margin: 0;padding: 0;	width: 100%;min-height: 100vh;background: #000000;	text-transform: uppercase;}
+html { 	font-size: 18px; color: #000; letter-spacing: -0.03rem; background-color: #000;}
 body, h1, h2 { 
-	font-family:'Noto Sans KR', sans-serif; 
-	font-weight: 400; 
-	text-align: center; 
-	word-break: keep-all; 
-	overflow-x: hidden;
+                font-family:'Noto Sans KR', sans-serif; 
+                font-weight: 400; 
+                text-align: center; 
+                word-break: keep-all;               
 }
 
-.main-container{
-	background-repeat: repeat-x;
-    background-position: center;
-	background-color: #000;
-    }
-
+/* header,footder */
+.main-container{background-repeat: repeat-x;  background-position: center;background-color: #000;}
 .uk-position-top { top: 30px; z-index: 10;}
 .uk-navbar{border-bottom: 0.05rem solid #ffffff; height: 110px;}
 .logo{background-color: #000000; height: 110px;}
@@ -61,69 +31,12 @@ footer .uk-logo { min-height: auto;}
 footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7f7f !important; margin: 10px 5px;}
 
 
-.motion-e {    
-    position: absolute;
-    top: 530px;
-    right: 0;
-    bottom: 0;
-    padding-right: 162px;
-}
-
-.motion-m{
-    position: absolute;
-    top:0;
-    left:0;
-    padding-left: 148px;
-    padding-top: 526px;}
-
-.motion-this{position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding-right: 430px;
-    padding-top: 150px;
-}
-
-
-.scroll-width{	
-	margin:0 auto; 
-	padding: 0 0m;
-	max-width: 1920px;
-}
-/*이미지그룹화 클래스 */
-.scroll-graphic{
-	position: sticky; 
-	top:0;
-	/*height: 100vh;*/
-}
-
-/*bg배경 컨테이너 */
-.graphic-item{
-	position: absolute;
-	top:0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	
-}
-
-.scene-img{
-	max-width: 100vw;
-}
-.scroll-text{
-	position: relative;
-}	
-
-.bg-video .section-main{
+/* section */
+.section-110{top: 110px;
 	position: relative;
     width: 100%;
-    height: 100%;
     margin: 0 auto;
 }
-
 .step2-video{
 	position:relative;
     top: 0;
@@ -145,25 +58,70 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
   max-width: 817px!important; height: auto !important; margin: 97px auto; position: relative;
   
 }
-
-.step5-tit >img{margin-top: 162px;}
-.section-110{top: 110px;
-	position: relative;
-    width: 100%;
-    margin: 0 auto;
-    
+.scroll-graphic{
+	position: sticky; 
+	top:0;
+	/*height: 100vh;*/
 }
 
-.step3-video{ margin-top: 358px; position: relative;}
-.step1-video{}
+/*bg배경 컨테이너 */
+.graphic-item{
+	position: absolute;
+	top:0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	
+}
+.scene-img{
+	max-width: 100vw;
+}
+.scroll-text{
+	position: relative;
+}	
+.scroll-width{	
+	margin:0 auto; 
+	padding: 0 0m;
+	max-width: 1920px;
+}
+.bg-video .section-main{
+	position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
 
+.motion-e {    
+    position: absolute;
+    top: 530px;
+    right: 0;
+    bottom: 0;
+    padding-right: 162px;
+}
+.motion-m{
+    position: absolute;
+    top:0;
+    left:0;
+    padding-left: 148px;
+    padding-top: 526px;}
+
+.motion-this{position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-right: 430px;
+    padding-top: 150px;
+}
+.step5-tit >img{margin-top: 162px;}
+.step3-video{ margin-top: 358px; position: relative;}
 
 /* Slider */
-
 .case-slider { margin-top: 198px;}
 .slick-slide { margin: 0px 20px;}
 .slick-slide img { width: auto; height: 100%;}
-
 .slick-slider{
     position: relative;
     display: block;
@@ -178,7 +136,6 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
         touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-
 .slick-list{
     position: relative;
     display: block;
@@ -188,7 +145,6 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
 }
 .slick-list:focus{ outline: none;}
 .slick-list.dragging{ cursor: pointer; cursor: hand;}
-
 .slick-slider .slick-track,
 .slick-slider .slick-list{
     -webkit-transform: translate3d(0, 0, 0);
@@ -197,7 +153,6 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
 }
-
 .slick-track{
     position: relative;
     top: 0;
@@ -233,6 +188,83 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
 }
 .slick-arrow.slick-hidden { display: none;}
 
+/* section6 image banner*/
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+    .flex-item01{
+    width:500px;
+    height: 600px;}
+  
+    .flex-item02{
+    width:1027px;
+    height: 1230px; 
+    margin-top: 30px;}
+  
+    .flex-container > .flex-item01 > img{
+    
+  }
+.shopImgBig{ 
+    position:relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.uk-flex{display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;}
+
+.tootip{position: relative;
+}
+.tootip h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+.content{
+    width: 400px;
+    background-color: rgba(100, 100, 100, 0.8);
+    padding: 20px;
+    position: absolute;
+    top:-65%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 5px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .2s;
+}
+
+.content h3{
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+.content p{
+    line-height: 1.4;
+}
+
+.content::before{
+    content: "";
+    position: absolute;
+    width: 25px;
+    height:25px;
+    background-color: rgba(100, 100, 100, 0.8);
+    bottom: 0;
+    left:50%;
+    transform: rotate(45deg) translateY(50%);
+}
+
+h2:active+.content{
+    visibility: visible;
+    opacity: 1;
+    
+}
 
 
 
@@ -276,7 +308,7 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
 	.uk-navbar{border-bottom: 0.05rem solid #ffffff; }
 	.scroll-graphic{position: sticky; top:0;}
 	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
-        max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
+        max-width: 300px!important; height: auto !important; margin: 45px auto; position: relative;}
     .step3-video {padding: 0 50px; margin-top: 200px;}
     .step2-video {padding-top: 120px;}
 	.scroll-text{position: relative; }	
@@ -284,7 +316,7 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
     .case-slider { margin-top: 60px}
     .slide > img{width: 65%;}
     .scene-img { max-width: 100vw;}
-    .step5-tit >img {max-width:50% ; margin-top: 50px;}
+    .step5-tit >img {max-width:50% ; margin-top: 50px; }
     .motion-e { position: absolute; top: 200px; right: 41px;  bottom: 0; padding-right: 31px;  width: 16%;  }
     .motion-m { position: absolute; top: 0; left: 35px; padding-left: 22px; padding-top: 194px; width: 18%;}   
     .motion-this {position: absolute; top: 0; left: 150px; padding-top: 83px;}
@@ -292,10 +324,6 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
 
-}
-
-@media (max-width: 959px) {	
-	.uk-footer-logo {max-width:20%; min-height:auto;}			
-	
-	
-}
+    .uk-flex {display: flex; flex-direction: column; flex-wrap: nowrap;justify-content: center;}
+ 
+    }
