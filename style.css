@@ -7,7 +7,7 @@
 ul,ol{list-style: none;} 
 a {color: #ffffff; text-decoration:none !important }
 a:hover { text-decoration:none !important }
-body {margin: 0;padding: 0;	width: 100%;min-height: 100vh;background: #000000;	text-transform: uppercase;}
+body {margin: 0;padding: 0;	width: 100%;min-height: 100vh;background-color: #000000;	text-transform: uppercase;}
 html { 	font-size: 18px; color: #000; letter-spacing: -0.03rem; background-color: #000;}
 body, h1, h2 { 
                 font-family:'Noto Sans KR', sans-serif; 
@@ -91,29 +91,6 @@ footer p, footer p a { font-size: 11px !important; font-weight: 300; color: #7f7
     width: 100%;
     height: 100%;
     margin: 0 auto;
-}
-
-.motion-e {    
-    position: absolute;
-    top: 530px;
-    right: 0;
-    bottom: 0;
-    padding-right: 162px;
-}
-.motion-m{
-    position: absolute;
-    top:0;
-    left:0;
-    padding-left: 148px;
-    padding-top: 526px;}
-
-.motion-this{position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    padding-right: 430px;
-    padding-top: 150px;
 }
 .step5-tit >img{
     position: absolute;
@@ -321,6 +298,54 @@ button.uk-button.uk-button-default.popup_a {
     left: 1016px !important;
     width: 204px !important;
 }
+.motion-e {    
+    position: absolute;
+    top: 530px;
+    right: 0;
+    bottom: 0;
+    padding-right: 162px;
+}
+.motion-m{
+    position: absolute;
+    top:0;
+    left:0;
+    padding-left: 148px;
+    padding-top: 526px;}
+
+.motion-this{position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    padding-right: 430px;
+    padding-top: 150px;
+}
+
+/*.motion-e{
+    background-image:url(images/ani_e.png);
+    width: 217px;
+    height:278px;
+    position: absolute;
+    top:530px;
+    right: 0;}
+
+    /*animation-name:e_ani;
+    animation-duration: 1s;
+    animation-iteration-count:2;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(0.42, 0, 0.33, 1.01);
+    animation-fill-mode: forwards;
+}
+    
+@keyframes e_ani {
+    from{
+margin-right:167px;
+    }
+    to{
+margin-right:500px;
+    }
+}*/
+
 
 /*foot 타이포 슬라이드 */
 #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
@@ -336,7 +361,8 @@ button.uk-button.uk-button-default.popup_a {
 
 
 @media (max-width: 1024px) {
-	.uk-position-top { top: 30px; z-index: 10;}	
+	.uk-position-top { top: 30px; z-index: 10;}
+    body{background-color: #000000;}	
     html { font-size: 13px;}
 	h1 { font-size: 30px !important;}
 	h2 { font-size: 22px !important;}
@@ -364,6 +390,7 @@ button.uk-button.uk-button-default.popup_a {
 }
 
 @media (max-width: 638px) {
+    body{background-color: #000000;}
 	html { font-size: 13px;}
 	h1 { font-size: 30px !important;}
 	h2 { font-size: 22px !important;}
