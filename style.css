@@ -320,13 +320,15 @@ button.uk-button.uk-button-default.popup_a {
 .motion-e {    
     position: absolute;
     top: 530px;
-    right:481px;
+    right: 165px;
+   
  
 }
 .motion-m{
     position: absolute;
     top: 526px;
-    left: 468px;}
+    left: 183px;;
+;}
 
 .motion-this{
     position: absolute;
@@ -478,7 +480,7 @@ button.uk-button.uk-button-default.popup_a {
 
 @media (max-width: 768px) {
     .text-ani{ position: absolute; top:40px;left:0;right: 0; }
-    .motion-e { position: absolute;top: 216px;right: -219px;}
+    .motion-e { position: absolute;top: 216px;right: -197px;}
     .motion-m{ position: absolute;top: 237px;left: 23px;width: 20%;}
     .motion-this{ position: absolute; top: 43px;left: 136px; width: 40%;}
     .height1400{height: 800px;}
@@ -571,25 +573,25 @@ button.uk-button.uk-button-default.popup_a {
         width: 85px !important;
     }      
     .product01{
-        width: 45% !important;
+        width: 35% !important;
         padding: 5px!important;
     }
 
     .product02{
-        width:91%!important;
+        width:71%!important;
         padding: 7px!important;
     }
     .product03{
-        width: 45%!important;
+        width: 35%!important;
         padding: 5px!important;
         margin-top: 15px!important;
     }
     .product05{
-        width:91%!important;
+        width:71%!important;
         padding: 7px!important; 
     }
     .product06{
-        width: 30%!important;
+        width: 25%!important;
         padding: 5px!important; 
     }       
 }
