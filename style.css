@@ -16,6 +16,7 @@ body, h1, h2 {
                 text-align: center; 
                 word-break: keep-all;               
 }
+html, body{overflow-x:hidden; margin: 0; padding: 0;}
 
 /* header,footder */
 header{ width: 100vw; height: 110px;}
@@ -479,8 +480,9 @@ button.uk-button.uk-button-default.popup_a {
 
 
 @media (max-width: 768px) {
+    
     .text-ani{ position: absolute; top:40px;left:0;right: 0; }
-    .motion-e { position: absolute;top: 216px;right: -197px;}
+    .motion-e { position: absolute;top: 216px;right: -175px;}
     .motion-m{ position: absolute;top: 237px;left: 23px;width: 20%;}
     .motion-this{ position: absolute; top: 43px;left: 136px; width: 40%;}
     .height1400{height: 800px;}
