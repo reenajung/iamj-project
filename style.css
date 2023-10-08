@@ -7,7 +7,7 @@
 ul,ol{list-style: none;} 
 a {color: #ffffff; text-decoration:none !important }
 a:hover { text-decoration:none !important }
-body {margin: 0;padding: 0;	width: 100%;min-height: 100vh;background-color: #000000;	text-transform: uppercase; display: flex; flex-direction: column;}
+body { margin: 0;padding: 0; width: 100%;min-height: 100vh;background-color: #000000;	text-transform: uppercase; display: flex; flex-direction: column;}
 
 html { 	font-size: 18px; color: #000; letter-spacing: -0.03rem; background-color: #000;}
 body, h1, h2 { 
@@ -18,8 +18,8 @@ body, h1, h2 {
 }
 
 /* header,footder */
-header{width: 100%; height: 110px;}
-.main-container{background-repeat: repeat-x;  background-position: center;background-color: #000;}
+header{ width: 100vw; height: 110px;}
+.main-container{ background-repeat: repeat-x;  background-position: center;background-color: #000;}
 .uk-position-top { top: 30px; z-index: 10;}
 .uk-navbar{border-bottom: 0.05rem solid #ffffff; height: 110px;}
 .logo{ }
@@ -353,7 +353,7 @@ button.uk-button.uk-button-default.popup_a {
 
 @media (max-width: 1024px) {
 	.uk-position-top { top: 30px; z-index: 10;}
-    body{background-color: #000000;}	
+    body{/*width:100vw; max-height: 100vh; background-color: #000000;	text-transform: uppercase; display: flex; flex-direction: column;*/}	
     html { font-size: 13px;}
 	h1 { font-size: 30px !important;}
 	h2 { font-size: 22px !important;}
@@ -365,7 +365,6 @@ button.uk-button.uk-button-default.popup_a {
 	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
         max-width: 500px!important; height: auto !important; margin: 50px auto; position: relative;}
     .step3-video {padding: 0 100px; margin-top: 60px;}
-    .step2-video {padding-top: 120px;}
 	.scroll-text{position: relative; }	
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
     .case-slider { margin-top: 60px}
@@ -406,25 +405,29 @@ button.uk-button.uk-button-default.popup_a {
 	.uk-navbar{border-bottom: 0.05rem solid #ffffff; }
 	.scroll-graphic{position: sticky; top:0;}
 	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
-        max-width: 300px!important; height: auto !important; margin: 45px auto; position: relative;}
-    .step3-video {padding: 0 50px; margin-top: 200px;}
-    .step2-video {padding-top: 120px;}
+        max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
+    .step3-video {padding: 0 50px; margin-top: 100px; }
+    .step2-video {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 75px;
+        width: 80%;
+        margin: 0 auto;}
 	.scroll-text{position: relative; }	
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
     .case-slider { margin-top: 60px}
     .slide > img{width: 65%;}
     .scene-img { max-width: 100vw;}
     .step5-tit >img {max-width:43% ; margin-top:30px; }
-    .motion-e { position: absolute; top: 200px; right: 41px;  bottom: 0; padding-right: 31px;  width: 16%;  }
-    .motion-m { position: absolute; top: 0; left: 35px; padding-left: 22px; padding-top: 194px; width: 18%;}   
-    .motion-this {position: absolute; top: 0; left: 150px; padding-top: 83px;}
     .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
     .height1400{height: 600px;}
     /*foot 타이포 슬라이드 */
     #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
-    .viewBox{ width: 100%; height: 100px;}
+    .viewBox{ width: 100%; height: 100px; margin-top: 20px;}
     .slideBox{ width: 500%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
     .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
     .slideItem{ font-size: 1rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px;}
@@ -435,11 +438,31 @@ button.uk-button.uk-button-default.popup_a {
         }
 
 
+    .text-ani{
+        position: absolute;
+        top:0;
+        left:0;
+        right: 0;
+    }
+    .motion-e {    
+        position: absolute;
+        top: 216px;
+        right: -19px;
+    }
+    .motion-m{
+        position: absolute;
+        top: 44px;
+        left: -1px;}
 
+    .motion-this{
+        position: absolute;
+        top: -39px;
+        right: 314px;
+    }
 
 
     button.uk-button.uk-button-default.popup_a {
-        border: hidden;}
+        border: hidden;     display: contents;}
     
     .content-pop{
         position: relative;
@@ -509,8 +532,35 @@ button.uk-button.uk-button-default.popup_a {
         position: absolute;
         top: 1208px !important;
         left: 145px !important;
-        width: 160px !important;}        
+        width: 160px !important;}      
+    .product01{
+        width: 49% !important;
+        padding: 5px!important;
+    }
+
+    .product02{
+        width:1057px!important;
+        padding: 7px!important;
+    }
+    .product03{
+        width: 49%!important;
+        padding: 5px!important;
+        margin-top: 15px!important;
+    }
+    .product05{
+        width:1057px!important;
+        padding: 7px!important; 
+    }
+    .product06{
+        width: 30%!important;
+        padding: 5px!important; 
+    }       
     .step9-img{  margin-bottom: 100px;}
     
     }      
+    .pro-mv {
+        margin-top: 20px;}
 
+    @media (max-width: 412px) {
+
+    }
