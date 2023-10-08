@@ -203,7 +203,7 @@ header{ width: 100vw; height: 110px;}
 
 /*섹션6 show hide*/
 button.uk-button.uk-button-default.popup_a {
-    border: hidden;}
+    border: hidden; display: inline-flex;}
 
 .content-pop{
 	position: relative;
@@ -313,26 +313,26 @@ button.uk-button.uk-button-default.popup_a {
     width: 204px !important;
 }
 .text-ani{
-    position: absolute;
+    /*position: absolute;*/
     top:0;
     left:0;
     right: 0;
 }
 .motion-e {    
-    position: absolute;
+
     top: 530px;
     right: 165px;
-   
+    position:absolute;
  
 }
-.motion-m{
-    position: absolute;
+.motion-m{   
     top: 526px;
-    left: 183px;;
-;}
+    left: 183px;
+    position: absolute;
+}
 
 .motion-this{
-    position: absolute;
+    position:absolute;
     top: 150px;
     left: 0;
     right: 430px;
@@ -350,10 +350,43 @@ button.uk-button.uk-button-default.popup_a {
     100%{transform: translateX(-50%);}    
 }
 
+@media (min-width: 1930px) { 
+    .text-ani{
+        /*position: absolute;*/
+        top:0;
+        left:0;
+        right: 0;
+    }
+    .motion-e {    
+    
+        top: 530px;
+        right: 466px;
+        position:absolute;
+     
+    }
+    .motion-m{   
+        top: 526px;
+        left: 476px;
+        position: absolute;
+    }
+    
+    .motion-this{
+        position:absolute;
+        top: 150px;
+        left: 0;
+        right: 430px;
+    }
 
+ }
 
-
-
+@media (max-width:1800px) {
+    
+    .text-ani{ position: absolute;top: 80px;;left:0; right: 0; }
+    .motion-e { position: absolute; top: 425px;right: 108px;}
+    .motion-m{ position: absolute;top: 452px;left: 117px;}
+    .motion-this{ position: absolute;top: 71px;left: 136px;}
+    
+}
 
 
 
@@ -384,7 +417,7 @@ button.uk-button.uk-button-default.popup_a {
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
     .slick-slide > img{ height: 80%; width: 80%;}
     .text-ani{ position: absolute;top:0;left:0; right: 0;width: 70%; }
-    .motion-e { position: absolute; top: 299px;right: -294px;width: 17%;}
+    .motion-e { position: absolute; top: 299px;right: -225px;width: 17%;}
     .motion-m{ position: absolute;top: 367px;left: 25px; width: 23%;}
     .motion-this{ position: absolute;top: 71px;left: 136px;width: 35%;}
 
@@ -401,46 +434,46 @@ button.uk-button.uk-button-default.popup_a {
         border: hidden;     display: inline-flex;}  
 
     .product01 {
-        width: 483px!important;
+        width: 400px!important;
         padding: 15px!important;   
     }   
     
     .product02{
-        width:1057px!important;
+        width:800px!important;
         padding: 15px!important;
         margin-top: 15px!important;
     }
     .product03{
-        width: 483px!important;
+        width: 400px!important;
         padding: 15px!important;
         margin-top: 15px!important;
     }
     .product05{
-        width:1057px!important;
+        width:800px!important;
         padding: 15px!important; 
     }
     .product06{
-        width: 330px!important;
+        width: 300px!important;
         padding: 15px!important; 
     }    
     .popup1{
         position: absolute;
-        top: 462px !important;
-        left: 196px !important;
+        top: 349px !important;
+        left: 499px !important;
         width: 266px !important;
     }  
     .popup2{
         position: absolute;
-        top: 654px !important;
-        left: 681px !important;
+        top: 610px !important;
+        left: 560px !important;
         width: 230px !important;
     }
     
     .popup3{
         position: absolute;
-        top: 352px !important;
-        left: 322px !important;
-        width: 266px !important;
+        top: 292px !important;
+        left: 199px !important;
+        width: 148px !important;
     }
     
     .popup4{
@@ -452,8 +485,8 @@ button.uk-button.uk-button-default.popup_a {
     
     .popup5{
         position: absolute;
-        top: 1065px !important;
-        left: 378px !important;
+        top: 831px !important;
+        left: 336px !important;
         width: 204px !important;
     }
     
@@ -465,15 +498,16 @@ button.uk-button.uk-button-default.popup_a {
     }
     .popup7{
         position: absolute;
-        top: 267px !important;
-        left: 508px !important;
+        top: 245px !important;
+        left: 394px !important;
         width: 163px !important;
     }
     .popup8{
         position: absolute;
         top: 238px !important;
-        left: 792px !important;
+        left: 706px !important;
         width: 148px !important;
+    
     }
 }
 
@@ -490,6 +524,16 @@ button.uk-button.uk-button-default.popup_a {
     .scroll-graphic{position: sticky; top:0;}
     .footer{margin-top:30px; bottom:0;}
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
+    .uk-navbar{border-bottom: 0.05rem solid #ffffff; }
+	.scroll-graphic{position: sticky; top:0;}
+	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
+        max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
+    .step3-video {padding: 0 50px; margin-top: 100px; }
+    .step2-video {  position: relative;top: 0;left: 0;right: 0;padding-top: 75px;width: 80%;margin: 0 auto;}
+	.scroll-text{position: relative; }	
+	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
+    .case-slider { margin-top: 60px}
+    .scene-img { max-width: 100vw;}
     button.uk-button.uk-button-default.popup_a {
         border: hidden;     display: contents;}
     
