@@ -16,7 +16,7 @@ body, h1, h2 {
                 text-align: center; 
                 word-break: keep-all;               
 }
-html, body{overflow-x:hidden; margin: 0; padding: 0;}
+html, body{/*overflow-x:hidden; */margin: 0; padding: 0;}
 
 /* header,footder */
 header{ width: 100vw; height: 110px;}
@@ -352,7 +352,7 @@ button.uk-button.uk-button-default.popup_a {
 
 @media (min-width: 1930px) { 
     .text-ani{
-        /*position: absolute;*/
+      
         top:0;
         left:0;
         right: 0;
