@@ -3,10 +3,14 @@
 
 
 /*공통*/
-* { box-sizing: border-box;	user-select: none;margin: 0;padding: 0;}
-ul,ol{list-style: none;} 
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; }
+html { width:100%; height:100%; }
+body { min-width:360px; }
+li { list-style:none; }
+ul,ol{list-style: none;}
+a:hover { text-decoration:underline; }
+a:active { text-decoration:none; } 
 a {color: #ffffff; text-decoration:none !important }
-a:hover { text-decoration:none !important }
 body { margin: 0;padding: 0; width: 100%;background-color: #000000;	text-transform: uppercase;}
 
 html { 	font-size: 18px; color: #000; letter-spacing: -0.03rem; background-color: #000;}
@@ -82,7 +86,7 @@ header{ width: 100vw; height: 110px;}
 .scroll-width{	
 	margin:0 auto; 
 	padding: 0 0m;
-	max-width: 1920px;
+	/*max-width: 1920px;*/
 }
 .bg-video {
 	position: relative;
@@ -313,7 +317,7 @@ button.uk-button.uk-button-default.popup_a {
     width: 204px !important;
 }
 .text-ani{
-    /*position: absolute;*/
+    position: absolute;
     top:0;
     left:0;
     right: 0;
@@ -337,6 +341,9 @@ button.uk-button.uk-button-default.popup_a {
     left: 0;
     right: 430px;
 }
+/*.motion-e > img{width: 100%;}
+.motion-m > img{width: 100%;}
+.motion-this > img{width: 100%;}*/
 
 /*foot 타이포 슬라이드 */
 #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
@@ -379,19 +386,12 @@ button.uk-button.uk-button-default.popup_a {
 
  }
 
-@media (max-width:1800px) {
-    
-    .text-ani{ position: absolute;top: 80px;;left:0; right: 0; }
-    .motion-e { position: absolute; top: 425px;right: 108px;}
-    .motion-m{ position: absolute;top: 452px;left: 117px;}
-    .motion-this{ position: absolute;top: 71px;left: 136px;}
-    
-}
 
 
 
-/* 1024px 반응형 */
-@media (max-width: 1024px) {
+
+/********************* Mobile / Tablet *********************/
+@media all (max-width:1024px) {
 	.uk-position-top { top: 30px; z-index: 10;}
     body{margin: 0;padding: 0; width: 100%; background-color: #000000;}	
     html { font-size: 13px;}
@@ -414,7 +414,7 @@ button.uk-button.uk-button-default.popup_a {
     .step5-tit >img {max-width:50% ; margin-top: 50px;}
     .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
-    .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
+    .bg-video {position: sticky; width: 100%; margin: 0 auto; }
     .slick-slide > img{ height: 80%; width: 80%;}
     .text-ani{ position: absolute;top:0;left:0; right: 0;width: 70%; }
     .motion-e { position: absolute; top: 299px;right: -225px;width: 17%;}
@@ -512,20 +512,29 @@ button.uk-button.uk-button-default.popup_a {
 }
 
 
-
-@media (max-width: 768px) {
-    
-    .text-ani{ position: absolute; top:40px;left:0;right: 0; }
-    .motion-e { position: absolute;top: 216px;right: -175px;}
-    .motion-m{ position: absolute;top: 237px;left: 23px;width: 20%;}
-    .motion-this{ position: absolute; top: 43px;left: 136px; width: 40%;}
+/********************* Tablet / PC *********************/
+@media all and (min-width:768px) and (max-width:1024px) {
+    html,body{overflow-x: hidden;}
+    .text-ani{ position: absolute; top:0;left:0;right: 0; }
+    .motion-e { position: absolute;top: 216px;right: -14px;}
+    .motion-m{ position: absolute;top: 270px;left: -43px;}
+    .motion-this{ position: absolute; top: 43px;left: 136px;}
+    .motion-e > img{width: 50%;}
+    .motion-m > img{width: 50%;}
+    .motion-this > img{width: 50%;}
     .height1400{height: 800px;}
     .scroll-width{margin:0 auto; padding: 0 1rem;}
     .scroll-graphic{position: sticky; top:0;}
+    .graphic-item {
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;}
     .footer{margin-top:30px; bottom:0;}
-    .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
     .uk-navbar{border-bottom: 0.05rem solid #ffffff; }
-	.scroll-graphic{position: sticky; top:0;}
 	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
         max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
     .step3-video {padding: 0 50px; margin-top: 100px; }
@@ -534,8 +543,22 @@ button.uk-button.uk-button-default.popup_a {
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
     .case-slider { margin-top: 60px}
     .scene-img { max-width: 100vw;}
+    .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
+    .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
+    .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
     button.uk-button.uk-button-default.popup_a {
         border: hidden;     display: contents;}
+     /*foot 타이포 슬라이드 */
+    #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
+    .viewBox{ width: 100%; height: 100px; margin-top: 20px;}
+    .slideBox{ width: 400%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
+    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
+    .slideItem{ font-size: 1.5rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px;}
+
+        @keyframes flowText {
+            0% {transform: translateX(0);}
+            100%{transform: translateX(-50%);}    
+        }
     
     .content-pop{
         position: relative;
@@ -645,7 +668,7 @@ button.uk-button.uk-button-default.popup_a {
 
 
 
-
+/********************* Mobile *********************/
 @media (max-width: 638px) {
     body{background-color: #000000;margin: 0;padding: 0; width: 100%; }
 	html { font-size: 13px;}
@@ -684,7 +707,7 @@ button.uk-button.uk-button-default.popup_a {
         }
 
     .text-ani{ position: absolute; top:0;left:0;right: 0; }
-    .motion-e { position: absolute;top: 216px;right: -185px;}
+    .motion-e { position: absolute;top: 216px;right: -160px;}
     .motion-m{ position: absolute;top: 237px;left: 23px;width: 20%;}
     .motion-this{ position: absolute; top: 43px;left: 136px; width: 40%;}
 
@@ -797,11 +820,12 @@ button.uk-button.uk-button-default.popup_a {
         padding: 5px!important; 
     }       
     .step9-img{  margin-bottom: 100px;}
-    
-    }      
     .pro-mv {
         margin-top: 20px;}
+    
+    }      
 
+/********************* Mobile *********************/
     @media (max-width: 430px) {
         .text-ani{ position: absolute; top:10px;left:0;right: 0; }
         .motion-e { position: absolute;top:141px;right: -101px;}
@@ -855,26 +879,26 @@ button.uk-button.uk-button-default.popup_a {
         .popup2{
             position: absolute;
             top: 279px !important;
-            left: 235px !important;
+            left: 200px !important;
             width: 121px !important;
             }       
         .popup3 {
             position: absolute;
             top: 142px !important;
-            left: 60px !important;
-            width: 212px !important;
+            left: 36px !important;
+            width: 165px !important;
         }
     
         .popup4 {
             position: absolute;
-            top: 106px !important;
-            left: 210px !important;
+            top: 126px !important;
+            left: 180px !important;
             width: 160px !important;
         }
     
         .popup5 {
             position: absolute;
-            top: 377px !important;
+            top: 350px !important;
             left: 50px !important;
             width: 149px !important;
         }
@@ -889,13 +913,13 @@ button.uk-button.uk-button-default.popup_a {
         .popup7 {
             position: absolute;
             top: 95px !important;
-            left: 167px !important;
-            width: 149px !important;
+            left: 128px !important;
+            width: 112px !important;
         }
         .popup8 {
             position: absolute;
             top: 77px !important;
-            left: 277px !important;
+            left: 250px !important;
             width: 95px !important;
         }      
         .product01{
