@@ -81,9 +81,9 @@
           </div>
           <!-- 텍스트 이미지 애니메이션 -->
           <div class="uk-section-expand text-ani uk-scrollspy-inview">
-            <div class="motion-e" uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true"><img src="images/ani_e.png"> </div>
-            <div class="motion-m" uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true"><img src="images/ani_m.png" ></div> 
-            <div class="motion-this" uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true"><img src="images/ani_this.png"></div>
+            <div uk-scrollspy="cls: uk-animation-slide-right; delay: 300; repeat: true"><img src="images/ani_e.png" class="motion-e" > </div>
+            <div uk-scrollspy="cls: uk-animation-slide-left; delay: 300; repeat: true"><img src="images/ani_m.png" class="motion-m" ></div> 
+            <div uk-scrollspy="cls: uk-animation-slide-top; delay: 300; repeat: true"><img src="images/ani_this.png"  class="motion-this"></div>
           </div>
           
             
@@ -98,9 +98,9 @@
 
 
           <!-- SECTION 4 제품 슬라이드 -->  
-          <div class="uk-container-expand section-main">
-            <div class="case-slider">
-              <section class="case-design slider">
+          <div class="uk-container-expand section-main" style="overflow-x: hidden;">
+            <div class="case-slider" style="overflow-x: hidden;">
+              <section class="case-design slider" style="overflow-x: hidden;">
                   <div class="slide"><img src="images/01.png" width="500px" height="251px;" alt=""></div>
                   <div class="slide"><img src="images/02.png" width="500px" height="251px;" alt=""></div>
                   <div class="slide"><img src="images/03.png" width="500px" height="229px;"  alt=""></div>

@@ -5,7 +5,8 @@
 /*공통*/
 html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,img { margin:0; padding:0; }
 html { width:100%; height:100%; }
-body { min-width:360px; }
+
+body { min-width:360px; box-sizing: border-box;}
 li { list-style:none; }
 ul,ol{list-style: none;}
 a:hover { text-decoration:underline; }
@@ -23,7 +24,7 @@ body, h1, h2 {
 html, body{/*overflow-x:hidden; */margin: 0; padding: 0;}
 
 /* header,footder */
-header{ width: 100vw; height: 110px;}
+header{ height: 110px;}
 .main-container{ background-repeat: repeat-x;  background-position: center;background-color: #000;}
 .uk-position-top { top: 30px; z-index: 10;}
 .uk-navbar{border-bottom: 1px solid #ffffff; height: 110px;}
@@ -65,6 +66,7 @@ header{ width: 100vw; height: 110px;}
 .scroll-graphic{
 	position: sticky; 
 	top:0;
+    align-self: auto;
 }
 
 /*bg배경 컨테이너 */
@@ -85,13 +87,13 @@ header{ width: 100vw; height: 110px;}
 }	
 .scroll-width{	
 	margin:0 auto; 
-	padding: 0 0m;
-	/*max-width: 1920px;*/
+	padding: 0 0;
+	max-width: 1920px;
 }
 .bg-video {
 	position: relative;
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     margin: 0 auto;
 }
 .step5-tit >img{
@@ -106,7 +108,7 @@ header{ width: 100vw; height: 110px;}
     margin-top: 358px; 
     position: relative;
 }
-.step9-img{  m
+.step9-img{
     argin-bottom: 340px;
 }
 .height1400{
@@ -117,15 +119,18 @@ header{ width: 100vw; height: 110px;}
 /* Slider */
 .case-slider {
      margin-top: 198px;
+     overflow-x: hidden;
 }
 .slick-slide { 
     margin: 0px 20px;
+    overflow-x: hidden;
 }
 .slick-slide img { 
     width: 100%; 
     height: 100%;
 }
 .slick-slider{
+    overflow-x: hidden;
     position: relative;
     display: block;
     box-sizing: border-box;
@@ -145,11 +150,12 @@ header{ width: 100vw; height: 110px;}
     overflow: hidden;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 .slick-list:focus{ outline: none;}
 .slick-list.dragging{ cursor: pointer; cursor: hand;}
 .slick-slider .slick-track,
-.slick-slider .slick-list{
+.slick-slider .slick-list{ overflow-x: hidden;
     -webkit-transform: translate3d(0, 0, 0);
        -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -161,14 +167,16 @@ header{ width: 100vw; height: 110px;}
     top: 0;
     left: 0;
     display: block;
+    overflow-x: hidden;
 }
 .slick-track:before,
 .slick-track:after{
     display: table;
     content: '';
+    overflow-x: hidden;
 }
 .slick-track:after{clear: both;}
-.slick-loading .slick-track{ visibility: hidden;}
+.slick-loading .slick-track{ visibility: hidden; overflow-x: hidden;}
 
 .slick-slide{
     display: none;
@@ -338,17 +346,16 @@ button.uk-button.uk-button-default.popup_a {
 .motion-this{
     position:absolute;
     top: 150px;
-    left: 0;
-    right: 430px;
+    left: 479px;
 }
 
 
 /*foot 타이포 슬라이드 */
-#content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
+#content-slide{ margin: 0; padding: 0; box-sizing: border-box;overflow-x:hidden ;}
 .viewBox{ width: 100%; height: 360px;overflow-x:hidden ;}
-.slideBox{ width: 200%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
-.leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
-.slideItem{ font-size: 2rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 5px;}
+.slideBox{ width: 200%; height: 100%; display: flex; animation: flowText 20s linear infinite;overflow-x:hidden ;}
+.leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;overflow-x:hidden ;}
+.slideItem{ font-size: 2rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 5px; overflow-x: hidden;}
 
 @keyframes flowText {
     0% {transform: translateX(0);}
@@ -364,7 +371,7 @@ button.uk-button.uk-button-default.popup_a {
     }
     .motion-e {    
     
-        top: 530px;
+       top: 530px;
         right: 466px;
         position:absolute;
      
@@ -378,8 +385,7 @@ button.uk-button.uk-button-default.popup_a {
     .motion-this{
         position:absolute;
         top: 150px;
-        left: 0;
-        right: 430px;
+        left: 817px;
     }
 
  }
@@ -387,15 +393,27 @@ button.uk-button.uk-button-default.popup_a {
 
 @media (max-width:1280px){
     .step2-video { position: relative;  top: 0; left: 0; right: 0; padding-top: 223px;  width: 80%; margin: 0 auto;}
-    .motion-e { position: absolute;  top: 430px; right: -4px;}
-    .motion-m{ position: absolute;top: 435px;left: 9px;}
-    .motion-this{ position: absolute; top: 43px;left: 136px;}
-    .motion-e > img{width: 50%;}
-    .motion-m > img{width: 50%;}
-    .motion-this > img{width: 50%;}    
+    .motion-e { 
+        position: absolute;
+        top: 249px;
+        right: 28px;
+        width: 138px;
+    }
+    .motion-m{ 
+        position: absolute;
+        top: 270px;
+        left: 35px;
+        width: 200px;
+    }
+    .motion-this{ 
+        position: absolute;t
+        top: 34px;
+        left: 198px;
+        width: 227px;
+    } 
     .text-ani {
         position: absolute;
-        top: 100px;
+        top: 0;
         left: 0;
         right: 0; } 
 }
@@ -427,7 +445,7 @@ button.uk-button.uk-button-default.popup_a {
 	.scroll-width{margin:0 auto; padding: 0 1rem;}
 	.uk-navbar{border-bottom: 0.05rem solid #ffffff; }
 	.scroll-graphic{position: sticky; top:0;}
-    .step2-video { position: relative;  top: 0; left: 0; right: 0; padding-top: 123px;  width: 80%; margin: 0 auto;}
+    .step2-video { position: relative;  top: 0; left: 0; right: 0; padding-top: 123px;  width: 75%; margin: 0 auto;}
 	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
         max-width: 500px!important; height: auto !important; margin: 50px auto; position: relative;}
     .step3-video {padding: 0 100px; margin-top: 60px;}
@@ -441,15 +459,30 @@ button.uk-button.uk-button-default.popup_a {
     .bg-video {position: sticky; width: 100%; margin: 0 auto; }
     .slick-slide > img{ height: 80%; width: 80%;}
     .text-ani{ position: absolute;top:0;left:0; right: 0;width: 70%; }
-    .motion-e { position: absolute; top: 299px;right: -225px;width: 17%;}
-    .motion-m{ position: absolute;top: 367px;left: 25px; width: 23%;}
-    .motion-this{ position: absolute;top: 71px;left: 136px;width: 35%;}
+    .motion-e { 
+        position: absolute;
+        top: 249px;
+        right: 28px;
+        width: 138px;
+    }
+    .motion-m{ 
+        position: absolute;
+        top: 270px;
+        left: 35px;
+        width: 200px;
+    }
+    .motion-this{ 
+        position: absolute;t
+        top: 34px;
+        left: 198px;
+        width: 227px;
+    }
 
-    #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
-    .viewBox{ width: 100%; height: 100px; margin-top: 20px;}
-    .slideBox{ width: 450%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
-    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
-    .slideItem{ font-size: 1.5rem; font: weight :thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px;}
+    #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden;}
+    .viewBox{ width: 100%; height: 100px; margin-top: 20px; overflow-x: hidden}
+    .slideBox{ width: 450%; height: 100%; display: flex; animation: flowText 20s linear infinite; overflow-x: hidden}
+    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center; overflow-x: hidden}
+    .slideItem{ font-size: 1.5rem; font: weight :thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
         @keyframes flowText {
             0% {transform: translateX(0);}
             100%{transform: translateX(-50%);}    
@@ -540,12 +573,25 @@ button.uk-button.uk-button-default.popup_a {
 @media all and (min-width:768px) and (max-width:1024px) {
     html,body{overflow-x: hidden;}
     .text-ani{ position: absolute; top:0;left:0;right: 0; }
-    .motion-e { position: absolute;top: 216px;right: -14px;}
-    .motion-m{ position: absolute;top: 270px;left: -43px;}
-    .motion-this{ position: absolute; top: 43px;left: 136px;}
-    .motion-e > img{width: 50%;}
-    .motion-m > img{width: 50%;}
-    .motion-this > img{width: 50%;}
+    .motion-e { 
+        position: absolute;
+        top: 249px;
+        right: 28px;
+        width: 138px;
+    }
+    .motion-m{ 
+        position: absolute;
+        top: 270px;
+        left: 35px;
+        width: 200px;
+    }
+    .motion-this{ 
+        position: absolute;t
+        top: 34px;
+        left: 198px;
+        width: 227px;
+    }
+
     .height1400{height: 800px;}
     .scroll-width{margin:0 auto; padding: 0 1rem;}
     .scroll-graphic{position: sticky; top:0;}
@@ -562,7 +608,7 @@ button.uk-button.uk-button-default.popup_a {
 	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
         max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
     .step3-video {padding: 0 50px; margin-top: 100px; }
-    .step2-video {  position: relative;top: 0;left: 0;right: 0;padding-top: 75px;width: 80%;margin: 0 auto;}
+    .step2-video {  position: relative;top: 0;left: 0;right: 0;padding-top: 75px;width: 75%;margin: 0 auto;}
 	.scroll-text{position: relative; }	
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
     .case-slider { margin-top: 60px}
@@ -572,12 +618,12 @@ button.uk-button.uk-button-default.popup_a {
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
     button.uk-button.uk-button-default.popup_a {
         border: hidden;     display: contents;}
-     /*foot 타이포 슬라이드 */
-    #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
-    .viewBox{ width: 100%; height: 100px; margin-top: 20px;}
-    .slideBox{ width: 400%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
-    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
-    .slideItem{ font-size: 1.5rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px;}
+ 
+    #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden}
+    .viewBox{ width: 100%; height: 100px; margin-top: 20px; overflow-x: hidden}
+    .slideBox{ width: 400%; height: 100%; display: flex; animation: flowText 20s linear infinite; overflow-x: hidden}
+    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center; overflow-x: hidden}
+    .slideItem{ font-size: 1.5rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
 
         @keyframes flowText {
             0% {transform: translateX(0);}
@@ -713,19 +759,19 @@ button.uk-button.uk-button-default.popup_a {
     .step2-video {  position: relative;top: 0;left: 0;right: 0;padding-top: 75px;width: 80%;margin: 0 auto;}
 	.scroll-text{position: relative; }	
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
-    .case-slider { margin-top: 60px}
+    .case-slider { margin-top: 60px;  overflow-x: hidden}
     .scene-img { max-width: 100vw;}
     .step5-tit >img {max-width:43% ; margin-top:30px; }
     .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
-    .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
+    .bg-video {position: relative;/* width: 100%; height: 100%; */margin: 0 auto; }
     .height1400{height: 600px;}
     /*foot 타이포 슬라이드 */
-    #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
-    .viewBox{ width: 100%; height: 100px; margin-top: 20px;}
-    .slideBox{ width: 500%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
-    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
-    .slideItem{ font-size: 1rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px;}
+    #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden}
+    .viewBox{ width: 100%; height: 100px; margin-top: 20px; overflow-x: hidden}
+    .slideBox{ width: 500%; height: 100%; display: flex; animation: flowText 20s linear infinite; overflow-x: hidden}
+    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center; overflow-x: hidden}
+    .slideItem{ font-size: 1rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
 
         @keyframes flowText {
             0% {transform: translateX(0);}
@@ -733,12 +779,24 @@ button.uk-button.uk-button-default.popup_a {
         }
 
     .text-ani{ position: absolute; top:0;left:0;right: 0; }
-    .motion-e { position: absolute;top: 216px;right: -160px;}
-    .motion-m{ position: absolute;top: 237px;left: 23px;width: 20%;}
-    .motion-this{ position: absolute; top: 43px;left: 136px; width: 40%;}
-
-   /* .motion-m > img{width: 50%;}
-    .motion-this > img{width: 50%;}*/
+    .motion-e {
+        position: absolute;
+        top: 187px;
+    right: 27px;
+    width: 63px;
+    }
+    .motion-m {
+    position: absolute;
+    top: 206px;
+    left: 28px;
+    width: 90px;
+}
+.motion-this {
+    position: absolute;
+    top: 46px;
+    left: 110px;
+    width: 156px;
+}
 
     .uk-inline{margin-left: 15px; margin-right: 15px;}
 
@@ -857,14 +915,30 @@ button.uk-button.uk-button-default.popup_a {
     }      
 
 /********************* Mobile *********************/
-    @media (max-width: 430px) {
+   @media (max-width: 430px) {
         .viewBox {
             overflow-x: hidden;}
         .text-ani{ position: absolute; top:10px;left:0;right: 0; }
-        .motion-e { position: absolute;top:120px;right: -65px;}
-        .motion-e > img{width: 25%;}
-        .motion-m{ position: absolute;top: 130px;left: 24px;}
-        .motion-this{ position: absolute; top: 43px;left: 74px; }
+        
+        .motion-e {
+            position: absolute;
+            top: 130px;
+            right: 21px;
+            width: 40px;
+        }
+        .motion-m {
+        position: absolute;
+        top: 143px;
+        left: 19px;
+        width: 56px;
+    }
+    .motion-this {
+        position: absolute;
+        top: 51px;
+        left: 84px;
+        width: 102px;
+    }
+
         .step5-tit >img {max-width:43% ; margin-top:30px; padding-top:0;}
         
         .height1400{height: 342px;}
