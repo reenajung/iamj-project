@@ -345,7 +345,7 @@ button.uk-button.uk-button-default.popup_a {
 
 /*foot 타이포 슬라이드 */
 #content-slide{ margin: 0; padding: 0; box-sizing: border-box;}
-.viewBox{ width: 100%; height: 360px;}
+.viewBox{ width: 100%; height: 360px;overflow-x:hidden ;}
 .slideBox{ width: 200%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
 .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
 .slideItem{ font-size: 2rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 5px;}
@@ -397,7 +397,7 @@ button.uk-button.uk-button-default.popup_a {
         position: absolute;
         top: 100px;
         left: 0;
-        right: 0;  
+        right: 0; } 
 }
 .slideItem {
     font-size: 1.5rem;
@@ -414,6 +414,8 @@ button.uk-button.uk-button-default.popup_a {
 
 /********************* Mobile / Tablet *********************/
 @media all (max-width:1024px) {
+    .viewBox {
+        overflow-x: hidden;}
 	.uk-position-top { top: 30px; z-index: 10;}
     body{margin: 0;padding: 0; width: 100%; background-color: #000000;}	
     html { font-size: 13px;}
@@ -684,7 +686,9 @@ button.uk-button.uk-button-default.popup_a {
     .product06{
         width: 25%!important;
         padding: 5px!important; 
-    }       
+    }  
+    .viewBox {
+        overflow-x: hidden;}     
 }
 
 
@@ -847,11 +851,15 @@ button.uk-button.uk-button-default.popup_a {
     .step9-img{  margin-bottom: 100px;}
     .pro-mv {
         margin-top: 20px;}
+    .viewBox {
+            overflow-x: hidden;}
     
     }      
 
 /********************* Mobile *********************/
     @media (max-width: 430px) {
+        .viewBox {
+            overflow-x: hidden;}
         .text-ani{ position: absolute; top:10px;left:0;right: 0; }
         .motion-e { position: absolute;top:120px;right: -65px;}
         .motion-e > img{width: 25%;}
