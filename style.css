@@ -320,9 +320,8 @@ button.uk-button.uk-button-default.popup_a {
 .motion-e {    
     position: absolute;
     top: 530px;
-    right: 0;
-    bottom: 0;
-    padding-right: 487px;
+    right:481px;
+ 
 }
 .motion-m{
     position: absolute;
@@ -362,18 +361,21 @@ button.uk-button.uk-button-default.popup_a {
 	.scroll-width{margin:0 auto; padding: 0 1rem;}
 	.uk-navbar{border-bottom: 0.05rem solid #ffffff; }
 	.scroll-graphic{position: sticky; top:0;}
+    .step2-video {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding-top: 75px;
+        width: 80%;
+        margin: 0 auto;}
 	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
         max-width: 500px!important; height: auto !important; margin: 50px auto; position: relative;}
     .step3-video {padding: 0 100px; margin-top: 60px;}
 	.scroll-text{position: relative; }	
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
-    .case-slider { margin-top: 60px}
-    .slide > img{max-height: 65%; max-width: auto;}
     .scene-img { max-width: 100vw;}
     .step5-tit >img {max-width:50% ; margin-top: 50px;}
-    .motion-e { position: absolute; top: 200px; right: 41px;  bottom: 0; padding-right: 31px;  width: 16%;  }
-    .motion-m { position: absolute; top: 0; left: 35px; padding-left: 22px; padding-top: 194px; width: 18%;}   
-    .motion-this {position: absolute; top: 0; left: 150px; padding-top: 83px;}
     .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
@@ -382,13 +384,38 @@ button.uk-button.uk-button-default.popup_a {
     .viewBox{ width: 100%; height: 100px;}
     .slideBox{ width: 450%; height: 100%; display: flex; animation: flowText 20s linear infinite;}
     .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;}
-    .slideItem{ font-size: 2rem; font: weight :thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px;}
+    .slideItem{ font-size: 1.5rem; font: weight :thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px;}
 
         @keyframes flowText {
             0% {transform: translateX(0);}
             100%{transform: translateX(-50%);}    
         }
-
+        .text-ani{
+            position: absolute;
+            top:0;
+            left:0;
+            right: 0;
+            width: 70%;
+        }
+        .motion-e {    
+            position: absolute;
+            top: 245px;
+            right: -209px;
+            width: 73px;
+        }
+        .motion-m{
+            position: absolute;
+            top: 302px;
+            left: 36px;
+            width: 93px;
+        }
+    
+        .motion-this{
+            position: absolute;
+            top: 45px;
+            width: 164px;
+            left: 122px;
+        }
 
 }
 
@@ -413,7 +440,7 @@ button.uk-button.uk-button-default.popup_a {
         left: 0;
         right: 0;
         padding-top: 75px;
-        width: 80%;
+        width: 60%;
         margin: 0 auto;}
 	.scroll-text{position: relative; }	
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
