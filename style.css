@@ -102,6 +102,7 @@ header{ height: 110px;}
     left: 0;
     margin: 0 auto;
     padding-top: 162px;
+    width: 44.0625rem;
 }
 
 .step3-video{ 
@@ -205,6 +206,7 @@ header{ height: 110px;}
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
    
 .uk-flex{display: flex;
@@ -247,26 +249,27 @@ button.uk-button.uk-button-default.popup_a {
     padding: 10px;
 }
 .product01{
-    width: 530px!important;
+    width: 100%!important;
     padding: 15px!important;
+    overflow-x: hidden;
 }
 
 .product02{
-    width:1057px!important;
+    width:100%px!important;
     padding: 15px!important;
     margin-top: 15px!important;
 }
 .product03{
-    width: 530px!important;
+    width: 100%!important;
     padding: 15px!important;
     margin-top: 15px!important;
 }
 .product05{
-    width:1057px!important;
+    width:100%!important;
     padding: 15px!important; 
 }
 .product06{
-    width: 423px!important;
+    width: 100%!important;
     padding: 15px!important; 
 }
 .popup1{
@@ -442,7 +445,7 @@ button.uk-button.uk-button-default.popup_a {
 }
 
 /********************* Mobile / Tablet *********************/
-@media all (max-width:1024px) {
+@media (max-width:1024px) {
     .viewBox {
         overflow-x: hidden;}
 	.uk-position-top { top: 30px; z-index: 10;}
@@ -580,173 +583,7 @@ button.uk-button.uk-button-default.popup_a {
 }
 
 
-/********************* Tablet / PC *********************/
-@media all and (min-width:768px) and (max-width:1024px) {
-    html,body{overflow-x: hidden;}
-    .text-ani{ position: absolute; top:0;left:0;right: 0; }
-    .motion-e { 
-        position: absolute;
-        top: 249px;
-        right: 28px;
-        width: 138px;
-    }
-    .motion-m{ 
-        position: absolute;
-        top: 270px;
-        left: 35px;
-        width: 200px;
-    }
-    .motion-this{ 
-        position: absolute;t
-        top: 34px;
-        left: 198px;
-        width: 227px;
-    }
 
-    .height1400{height: 800px;}
-    .scroll-width{margin:0 auto; padding: 0 1rem;}
-    .scroll-graphic{position: sticky; top:0;}
-    .graphic-item {
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;}
-    .footer{margin-top:30px; bottom:0;}
-    .uk-navbar{border-bottom: 0.05rem solid #ffffff; }
-	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
-        max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
-    .step3-video {padding: 0 50px; margin-top: 100px; }
-    .step2-video {  position: relative;top: 0;left: 0;right: 0;padding-top: 75px;width: 75%;margin: 0 auto;}
-	.scroll-text{position: relative; }	
-	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
-    .case-slider { margin-top: 60px}
-    .scene-img { max-width: 100vw;}
-    .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
-    .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
-    .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
-    button.uk-button.uk-button-default.popup_a {
-        border: hidden;     display: contents;}
- 
-    #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden}
-    .viewBox{ width: 100%; height: 100px; margin-top: 20px; overflow-x: hidden}
-    .slideBox{ width: 400%; height: 100%; display: flex; animation: flowText 20s linear infinite; overflow-x: hidden}
-    .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center; overflow-x: hidden}
-    .slideItem{ font-size: 1.5rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
-
-        @keyframes flowText {
-            0% {transform: translateX(0);}
-            100%{transform: translateX(-50%);}    
-        }
-    
-    .content-pop{
-        position: relative;
-        background: rgba(100, 100, 100, 0.8);
-        border-radius: .4em;
-        transition: all .2s;
-    }
-    
-    .content-pop:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 40%;
-        width: 0;
-        height: 0;
-        border: 13px solid transparent;
-        border-bottom-color: rgba(100, 100, 100, 0.8);
-        border-top: 0;
-        margin-left: -13px;
-        margin-top: -13px;
-    }
-    .content-pop p {
-        text-transform: uppercase;
-        font-weight: 300;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
-        color: #ffffff;
-        line-height: 1; 
-        padding: 10px;
-    }
-    .popup1 {
-        position: absolute;
-        top: 323px !important;
-        left: 171px !important;
-        width: 188px !important;
-    } 
-    .popup2{
-        position: absolute;
-        top: 469px !important;
-        left: 414px !important;
-        width: 175px !important;
-        }       
-    .popup3 {
-        position: absolute;
-        top: 260px !important;
-        left: 258px !important;
-        width: 108px !important;
-    }
-
-    .popup4 {
-        position: absolute;
-        top: 185px !important;
-        left: 460px !important;
-        width: 172px !important;
-    }
-
-    .popup5 {
-        position: absolute;
-        top: 769px !important;
-        left: 275px !important;
-        width: 134px !important;
-    }
-
-    .popup6{
-        position: absolute;
-        top: 190px !important;
-        left: 54px !important;
-        width: 120px !important;
-    }
-
-    .popup7 {
-        position: absolute;
-        top: 184px !important;
-        left: 379px !important;
-        width: 105px !important;
-    }
-    .popup8 {
-        position: absolute;
-        top: 165px !important;
-        left: 575px !important;
-        width: 85px !important;
-    }      
-    .product01{
-        width: 35% !important;
-        padding: 5px!important;
-    }
-
-    .product02{
-        width:71%!important;
-        padding: 7px!important;
-    }
-    .product03{
-        width: 35%!important;
-        padding: 5px!important;
-        margin-top: 15px!important;
-    }
-    .product05{
-        width:71%!important;
-        padding: 7px!important; 
-    }
-    .product06{
-        width: 25%!important;
-        padding: 5px!important; 
-    }  
-    .viewBox {
-        overflow-x: hidden;}     
-}
 
 
 
@@ -949,7 +786,7 @@ button.uk-button.uk-button-default.popup_a {
         left: 84px;
         width: 102px;
     }
-
+    .step3-video { width: 80%;   margin: 0 auto;}
         .step5-tit >img {max-width:43% ; margin-top:30px; padding-top:0;}
         
         .height1400{height: 342px;}
