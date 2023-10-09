@@ -206,7 +206,7 @@ header{ height: 110px;}
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    overflow-x: hidden;
+   
 }
    
 .uk-flex{display: flex;
