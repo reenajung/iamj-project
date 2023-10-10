@@ -340,8 +340,8 @@ button.uk-button.uk-button-default.popup_a {
 .motion-e {    
 
     top: 530px;
-    right: 165px;
-    position:absolute;
+    right: 485px;
+    position: absolute;
  
 }
 .motion-m{   
@@ -370,9 +370,7 @@ button.uk-button.uk-button-default.popup_a {
 }
 
 
-
-
-@media (min-width: 1920px) { 
+@media (max-width: 2560px) { 
     .text-ani{
       
         top:0;
@@ -396,6 +394,33 @@ button.uk-button.uk-button-default.popup_a {
         position:absolute;
         top: 150px;
         left: 479px;
+    }
+}
+
+@media (min-width: 1930px) { 
+    .text-ani{
+      
+        top:0;
+        left:0;
+        right: 0;
+    }
+    .motion-e {    
+    
+        top: 530px;
+        right: 486px;
+        position: absolute;
+     
+    }
+    .motion-m{   
+        top: 564px;
+    left: 497px;
+    position: absolute;
+    }
+    
+    .motion-this{
+        position: absolute;
+        top: 150px;
+        left: 792px;
     }
     /*foot 타이포 슬라이드 */
     #content-slide{ margin: 0; padding: 0; box-sizing: border-box;overflow-x:hidden ;}
