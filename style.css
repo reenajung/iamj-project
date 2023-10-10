@@ -369,143 +369,53 @@ button.uk-button.uk-button-default.popup_a {
     100%{transform: translateX(-50%);}    
 }
 
-
+/********************* Desktop (large) *********************/
 @media (max-width: 2560px) { 
-    .text-ani{
-      
-        top:0;
-        left:0;
-        right: 0;
-    }
-    .motion-e {    
-    
-       top: 530px;
-        right: 165px;
-        position:absolute;
-     
-    }
-    .motion-m{   
-        top: 564px;
-        left: 175px;
-        position: absolute;
-    }
-    
-    .motion-this{
-        position:absolute;
-        top: 150px;
-        left: 479px;
-    }
+    .text-ani{ top:0; left:0;right: 0;}
+    .motion-e { top: 530px; right: 165px; position:absolute;}
+    .motion-m{ top: 564px; left: 175px; position: absolute;}   
+    .motion-this{ position:absolute; top: 150px; left: 479px;}
 }
-
+/********************* Desktop 1920 *********************/
 @media (min-width: 1930px) { 
-    .text-ani{
-      
-        top:0;
-        left:0;
-        right: 0;
-    }
-    .motion-e {    
-    
-        top: 530px;
-        right: 486px;
-        position: absolute;
-     
-    }
-    .motion-m{   
-        top: 564px;
-    left: 497px;
-    position: absolute;
-    }
-    
-    .motion-this{
-        position: absolute;
-        top: 150px;
-        left: 792px;
-    }
+    .text-ani{ top:0; left:0; right: 0;}
+    .motion-e { top: 530px; right: 486px; position: absolute;}
+    .motion-m{ top: 564px; left: 497px; position: absolute;}
+    .motion-this{ position: absolute; top: 150px; left: 792px;}
     /*foot 타이포 슬라이드 */
     #content-slide{ margin: 0; padding: 0; box-sizing: border-box;overflow-x:hidden ;}
     .viewBox{ width: 100%; height: 360px;overflow-x:hidden ;}
     .slideBox{ width: 200%; height: 100%; display: flex; animation: flowText 20s linear infinite;overflow-x:hidden ;}
     .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;overflow-x:hidden ;}
     .slideItem{ font-size: 2rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 3px; overflow-x: hidden;}
-
-    @keyframes flowText {
-        0% {transform: translateX(0);}
-        100%{transform: translateX(-50%);}    
-    }
-
  }
 
-
+/********************* Desktop *********************/
  @media (max-width:1650px){
     .step2-video { position: relative;  top: 0; left: 0; right: 0; padding-top: 223px;  width: 80%; margin: 0 auto;}
-    .motion-e { 
-        position: absolute;
-        top: 482px;
-        right: 63px;
-        width: 138px;
-    }
-    .motion-m{ 
-        position: absolute;
-        top: 532px;
-        left: 73px;
-        width: 200px;
-    }
-    .motion-this{ 
-        position: absolute;
-        top: 176px;
-        left: 266px;
-        width: 273px;
-    } 
-    .text-ani {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0; } 
+    .motion-e { position: absolute; top: 482px; right: 63px; width: 138px;}
+    .motion-m{ position: absolute; top: 532px;left: 73px; width: 200px;}
+    .motion-this{ position: absolute;top: 176px;left: 266px;width: 273px;} 
+    .text-ani {position: absolute;top: 0;left: 0;right: 0; } 
     }
 
-
-
+/********************* Notebook/Desktop  *********************/
 @media (max-width:1280px){
     .step2-video { position: relative;  top: 0; left: 0; right: 0; padding-top: 223px;  width: 80%; margin: 0 auto;}
-    .motion-e { 
-        position: absolute;
-        top: 482px;
-        right: 28px;
-        width: 138px;
-    }
-    .motion-m{ 
-        position: absolute;
-        top: 532px;
-        left: 35px;
-        width: 200px;
-    }
-    .motion-this{ 
-        position: absolute;
-        top: 180px;
-        left: 198px;
-        width: 227px;
-    } 
-    .text-ani {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0; } 
-    
-    .slideItem {
-        font-size: 2rem;
-        font-weight: thin;
-        color: #ffffff;
-        font-family: 'Montserrat', sans-serif;
-        letter-spacing: 2px;
-    }
-
-    .product06 {
-        width: 400px!important;
-        padding: 15px!important;
-    }
+    .motion-e { position: absolute;top: 482px;right: 28px;width: 138px;}
+    .motion-m{  position: absolute;top: 532px;left: 35px;width: 200px;}
+    .motion-this{ position: absolute;top: 180px;left: 198px;width: 227px;} 
+    .text-ani {position: absolute; top: 0;left: 0; right: 0; } 
+    .slideItem {font-size: 2rem;font-weight: thin; color: #ffffff;font-family: 'Montserrat', sans-serif; letter-spacing: 2px; }
+   
 }
 
+/********************* ipad  air 820 *********************/
+@media(max-width:820px) {
+    .height1400{height: 895px;}
+    .slideItem { font-size: 1.5rem;  font-weight: thin; color: #ffffff;font-family: 'Montserrat', sans-serif;letter-spacing: 1px;}
+   
+}
 /********************* Mobile / Tablet *********************/
 @media(max-width:1024px) {
     .viewBox {
@@ -535,53 +445,18 @@ button.uk-button.uk-button-default.popup_a {
     .bg-video {position: sticky; width: 100%; margin: 0 auto; }
     .slick-slide > img{ height: 80%; width: 80%;}
     .text-ani{ position: absolute;top:0;left:0; right: 0;width: 70%; }
-    .motion-e { 
-        position: absolute;
-        top: 249px;
-        right: 28px;
-        width: 138px;
-    }
-    .motion-m{ 
-        position: absolute;
-        top: 270px;
-        left: 35px;
-        width: 200px;
-    }
-    .motion-this{ 
-        position: absolute;t
-        top: 34px;
-        left: 198px;
-        width: 227px;
-    }
+    .motion-e { position: absolute;top: 249px;right: 28px;width: 138px;}
+    .motion-m{ position: absolute;top: 270px;left: 35px; width: 200px;}
+    .motion-this{ position: absolute; top: 34px; left: 198px; width: 227px;}
     .slideItem{ font-size: 1.5rem; font: weight :thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
-    button.uk-button.uk-button-default.popup_a {
-        border: hidden;     display: inline-flex;}  
-
-    .product01 {
-        width: 90%
-        padding: 15px!important;   
-    }   
+    button.uk-button.uk-button-default.popup_a {border: hidden;     display: inline-flex;}  
     
-    .product02{
-        width:90%
-        padding: 15px!important;
-        margin-top: 15px!important;
-    }
-    .product03{
-        width: 90%
-        padding: 15px!important;
-        margin-top: 15px!important;
-    }
-    .product05{
-        width:90%
-        padding: 15px!important; 
-    }
-    .product06{
-        width: 90%
-        padding: 15px!important; 
-    }    
-    .popup1{
-        position: absolute;
+    .product01 { width: 400px; padding: 15px!important;   }   
+    .product02{ width:800px; padding: 15px!important; margin-top: 15px!important; }
+    .product03{ width: 400px; padding: 15px!important; margin-top: 15px!important;}
+    .product05{ width:800px; padding: 15px!important; }
+    .product06{ width: 260px;padding: 15px!important; }    
+    .popup1{ position: absolute;
         top: 349px !important;
         left: 499px !important;
         width: 266px !important;
@@ -590,30 +465,26 @@ button.uk-button.uk-button-default.popup_a {
         position: absolute;
         top: 610px !important;
         left: 560px !important;
-        width: 230px !important;
+        width: 230px !important; 
     }
-    
     .popup3{
         position: absolute;
         top: 292px !important;
         left: 199px !important;
         width: 148px !important;
-    }
-    
+    } 
     .popup4{
         position: absolute;
         top: 267px !important;
         left: 637px !important;
         width: 252px !important;
     }
-    
     .popup5{
         position: absolute;
         top: 831px !important;
         left: 336px !important;
         width: 204px !important;
     }
-    
     .popup6{
         position: absolute;
         top: 282px !important;
@@ -631,10 +502,9 @@ button.uk-button.uk-button-default.popup_a {
         top: 238px !important;
         left: 706px !important;
         width: 148px !important;
-    
     }
 }
-
+/********************* Tablet / Mobile *********************/
 @media (max-width:1000px) {
     .motion-m {
         position: absolute;
@@ -656,7 +526,7 @@ button.uk-button.uk-button-default.popup_a {
     }  
 }
 
-
+/********************* Tablet / Mobile *********************/
 @media (max-width:900px)and(max-width:1000px) {
     .motion-m {
         position: absolute;
@@ -676,48 +546,26 @@ button.uk-button.uk-button-default.popup_a {
         left: 198px;
         width: 227px;
     }  
+      
 }
 
 
-/********************* Tablet / PC *********************/
+/********************* Tablet / Mobile *********************/
 @media (max-width:768px){
   
-    .motion-e { 
-        position: absolute;
-        top: 228px;
-    right: -188px;
-    width: 95px;
-    }
-    .motion-m{ 
-        position: absolute;
-        top: 244px;
-        left: 35px;
-        width: 132px;
-    }
-    .motion-this{ 
-        position: absolute;
-        top: 31px;
-    left: 198px;
-    width: 227px;
-    }
+    .motion-e { position: absolute; top: 228px;right: -188px; width: 95px; }
+    .motion-m{  position: absolute; top: 244px; left: 35px;width: 132px; }
+    .motion-this{ position: absolute; top: 31px;left: 198px;width: 227px;}
 
     .height1400{height: 800px;}
     .scroll-width{margin:0 auto; padding: 0 1rem;}
     .scroll-graphic{position: sticky; top:0;}
-    .graphic-item {
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;}
+    .graphic-item { position: fixed;top: 0; left: 0;display: flex;align-items: center; justify-content: center; width: 100%;}
     .footer{margin-top:30px; bottom:0;}
     .uk-navbar{border-bottom: 0.05rem solid #ffffff; }
 	.step3-video {padding: 0 50px; margin-top: 100px; }
     .step2-video {  position: relative;top: 0;left: 0;right: 0;padding-top: 75px;width: 80%; margin: 0 auto;}
-	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; 
-        max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
+	.step2-video p{ font-size: 13px;font-weight: 400;line-height: 1.5em;word-break: keep-all;position: relative;text-align: justify; max-width: 400px!important; height: auto !important; margin: 45px auto; position: relative;}
     .scroll-text{position: relative; }	
 	.step{ color:white; font-size: 0.8rem;	 font-weight: 200;  line-height: 1.5em;}
     .case-slider { margin-top: 60px}
@@ -725,27 +573,19 @@ button.uk-button.uk-button-default.popup_a {
     .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
-    button.uk-button.uk-button-default.popup_a {
-        border: hidden;     display: contents;}
+    button.uk-button.uk-button-default.popup_a { border: hidden;     display: contents;}
  
     #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden}
     .viewBox{ width: 100%; height: 100px; margin-top: 20px; overflow-x: hidden}
     .slideBox{ width: 400%; height: 100%; display: flex; animation: flowText 20s linear infinite; overflow-x: hidden}
     .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center; overflow-x: hidden}
     .slideItem{ font-size: 1.5rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
-
-        @keyframes flowText {
-            0% {transform: translateX(0);}
-            100%{transform: translateX(-50%);}    
-        }
-    
     .content-pop{
         position: relative;
         background: rgba(100, 100, 100, 0.8);
         border-radius: .4em;
         transition: all .2s;
     }
-    
     .content-pop:after {
         content: '';
         position: absolute;
@@ -786,28 +626,24 @@ button.uk-button.uk-button-default.popup_a {
         left: 258px !important;
         width: 108px !important;
     }
-
     .popup4 {
         position: absolute;
         top: 185px !important;
         left: 460px !important;
         width: 172px !important;
     }
-
     .popup5 {
         position: absolute;
         top: 769px !important;
         left: 275px !important;
         width: 134px !important;
     }
-
     .popup6{
         position: absolute;
         top: 190px !important;
         left: 54px !important;
         width: 120px !important;
     }
-
     .popup7 {
         position: absolute;
         top: 184px !important;
@@ -846,10 +682,6 @@ button.uk-button.uk-button-default.popup_a {
         overflow-x: hidden;}     
 } 
 
-
-@media (max-width:650) {
-    
-}
 
 
 /********************* Mobile *********************/
@@ -891,37 +723,17 @@ button.uk-button.uk-button-default.popup_a {
         }
 
     .text-ani{ position: absolute; top:0;left:0;right: 0; }
-    .motion-e {
-        position: absolute;
-        top: 187px;
-    right: -173px;
-    width: 63px;
-    }
-    .motion-m {
-    position: absolute;
-    top: 206px;
-    left: 28px;
-    width: 90px;
-}
-.motion-this {
-    position: absolute;
-    top: 46px;
-    left: 110px;
-    width: 156px;
-}
-
+    .motion-e { position: absolute; top: 187px;right: -173px; width: 63px; }
+    .motion-m { position: absolute;  top: 206px;  left: 28px;  width: 90px;}
+    .motion-this { position: absolute;  top: 46px; left: 110px; width: 156px;}
     .uk-inline{margin-left: 15px; margin-right: 15px;}
-
-    button.uk-button.uk-button-default.popup_a {
-        border: hidden;     display: contents;}
-    
-    .content-pop{
+    button.uk-button.uk-button-default.popup_a { border: hidden;     display: contents;}
+       .content-pop{
         position: relative;
         background: rgba(100, 100, 100, 0.8);
         border-radius: .4em;
         transition: all .2s;
     }
-    
     .content-pop:after {
         content: '';
         position: absolute;
@@ -1000,7 +812,6 @@ button.uk-button.uk-button-default.popup_a {
         width: 49% !important;
         padding: 5px!important;
     }
-
     .product02{
         width:1057px!important;
         padding: 7px!important;
@@ -1037,12 +848,10 @@ button.uk-button.uk-button-default.popup_a {
 }
 
 /********************* Mobile *********************/
-   @media (max-width: 430px) {
-        .viewBox {
-            overflow-x: hidden;}
+@media (max-width: 430px) {
+        .viewBox { overflow-x: hidden;}
         .text-ani{ position: absolute; top:10px;left:0;right: 0; }
-        
-        .motion-e {
+                .motion-e {
             position: absolute;
             top: 130px;
             right: -96px;
@@ -1061,45 +870,35 @@ button.uk-button.uk-button-default.popup_a {
         width: 102px;
     }
 
-   .step5-tit >img {max-width:43% ; margin-top:30px; padding-top:0;}
-        
-        .height1400{height: 342px;}
-        .scroll-width{margin:0 auto; padding: 0 1rem;}
-        .scroll-graphic{position: sticky; top:0;}
-        .footer{margin-top:30px; bottom:0;}
-        .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
-        button.uk-button.uk-button-default.popup_a {
-            border: hidden;     display: contents;}
-        
-        .content-pop{
-            position: relative;
-            background: rgba(100, 100, 100, 0.8);
-            border-radius: .4em;
-            transition: all .2s;
-        }
-        
-        .content-pop:after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 40%;
-            width: 0;
-            height: 0;
-            border: 13px solid transparent;
-            border-bottom-color: rgba(100, 100, 100, 0.8);
-            border-top: 0;
-            margin-left: -13px;
-            margin-top: -13px;
-        }
-        .content-pop p {
-            text-transform: uppercase;
-            font-weight: 300;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 13px;
-            color: #ffffff;
-            line-height: 1; 
-            padding: 10px;
-        }
+    .step5-tit >img {max-width:43% ; margin-top:30px; padding-top:0;}
+    .height1400{height: 342px;}
+    .scroll-width{margin:0 auto; padding: 0 1rem;}
+    .scroll-graphic{position: sticky; top:0;}
+    .footer{margin-top:30px; bottom:0;}
+    .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
+    button.uk-button.uk-button-default.popup_a {border: hidden;     display: contents;}
+    .content-pop{position: relative;background: rgba(100, 100, 100, 0.8);border-radius: .4em;transition: all .2s;}
+    .content-pop:after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 40%;
+                        width: 0;
+                        height: 0;
+                        border: 13px solid transparent;
+                        border-bottom-color: rgba(100, 100, 100, 0.8);
+                        border-top: 0;
+                        margin-left: -13px;
+                        margin-top: -13px;}
+    .content-pop p {
+                    text-transform: uppercase;
+                    font-weight: 300;
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: 13px;
+                    color: #ffffff;
+                    line-height: 1; 
+                    padding: 10px;
+                }
         .popup1 {
             position: absolute;
             top: 161px !important;
