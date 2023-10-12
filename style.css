@@ -402,7 +402,15 @@ button.uk-button.uk-button-default.popup_a {
     .scroll-width{margin:0 auto;   padding: 0 0; max-width: 1920px;}
     .graphic-item{ position: absolute; top:0;left: 0; display: flex;  align-items: center; justify-content: center; width: 100%; }
     .bg-video {position: sticky; width: 100%; margin: 0 auto; }
-    .slick-slide > img{ height: 80%; width: 80%;}
+    .section-slider{
+        width:100%;
+        margin-top: 198px;
+        overflow-x: hidden;
+    }
+    .section-slider img{
+        width: 100%;
+        padding: 1.875rem;
+    }
     .text-ani{ position: absolute;top:0;left:0; right: 0;width: 70%; }
     .motion-e { position: absolute;top: 249px;right: 28px;width: 138px;}
     .motion-m{ position: absolute;top: 270px;left: 35px; width: 200px;}
@@ -895,6 +903,14 @@ button.uk-button.uk-button-default.popup_a {
         margin-top: 20px;}
     .viewBox {
             overflow-x: hidden;}
+    
+    .section-slider {
+        margin-top: 3.125rem;
+    }
+    .section-slider img{
+        width: 100%;
+        padding: .625rem;
+    }
     
     }      
 
