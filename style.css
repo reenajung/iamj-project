@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;600;700&display=swap');
 
 
 /*공통*/
@@ -12,7 +12,7 @@ ul,ol{list-style: none;}
 a:hover { text-decoration:underline; }
 a:active { text-decoration:none; } 
 a {color: #ffffff; text-decoration:none !important }
-body { margin: 0;padding: 0; width: 100%;background-color: #000000;	text-transform: uppercase;}
+body { margin: 0;padding: 0; width: 100%;background-color: #000000;	}
 
 html { 	font-size: 18px; color: #000; letter-spacing: -0.03rem; background-color: #000;}
 body, h1, h2 { 
@@ -34,7 +34,10 @@ header{ height: 110px;}
     align-items: center;
     box-sizing: border-box;}
 .uk-logo img { width: 100%;}
-.footer{margin-top:340px; bottom:0;}
+.footer{margin-top:340px; bottom:0;  padding-bottom: 150px;}
+.footer-btn p{color: #fff;}
+.footer-btn a{background: #000;    color: #fff;    font-size: 1.1em;    padding: 10px 35px;   display: inline-block;    margin: -10px 0 5px 0;}
+.footer-btn a:hover{ text-decoration-line: none;text-decoration:underline; color:#fff; }
 
 /* section */
 .section-main{
@@ -118,87 +121,21 @@ header{ height: 110px;}
 }
 
 /* Slider */
-.case-slider {
-     margin-top: 198px;
-     overflow-x: hidden;
-}
-.slick-slide { 
-    margin: 0px 20px;
-    overflow-x: hidden;
-}
-.slick-slide img { 
-    width: 100%; 
-    height: 100%;
-}
-.slick-slider{
-    overflow-x: hidden;
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-.slick-list{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-.slick-list:focus{ outline: none;}
-.slick-list.dragging{ cursor: pointer; cursor: hand;}
-.slick-slider .slick-track,
-.slick-slider .slick-list{ overflow-x: hidden;
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-.slick-track{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    overflow-x: hidden;
-}
-.slick-track:before,
-.slick-track:after{
-    display: table;
-    content: '';
-    overflow-x: hidden;
-}
-.slick-track:after{clear: both;}
-.slick-loading .slick-track{ visibility: hidden; overflow-x: hidden;}
 
-.slick-slide{
-    display: none;
-    float: left;
-    height: 100%;
-    min-height: 1px;
+.section-slider{
+    width:100%;
+    margin-top: 198px;
+    overflow-x: hidden;
 }
-[dir='rtl'] .slick-slide{ float: right;}
-.slick-slide img{ display: block;}
-.slick-slide.slick-loading img{
-    display: none;
+.section-slider img{
+    width: 100%;
+    padding: 1.875rem;
 }
-.slick-slide.dragging img{ pointer-events: none;}
-.slick-initialized .slick-slide{ display: block;}
-.slick-loading .slick-slide{ visibility: hidden;}
-.slick-vertical .slick-slide{
-    display: block;
-    height: auto;
-    border: 1px solid transparent;
+.section-slider .swiper-wrapper{
+    transition-timing-function: linear;
 }
-.slick-arrow.slick-hidden { display: none;}
+
+
 
 /* section6 image banner*/
 .flex-container{
@@ -241,13 +178,16 @@ button.uk-button.uk-button-default.popup_a {
 }
 .content-pop p {
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 600;
     font-family: 'Montserrat', sans-serif;
-    font-size: 19px;
+    font-size: 1.375rem;
     color: #ffffff;
     line-height: 1; 
     padding: 10px;
+   
 }
+
+
 .product01{
     width: 100%;
     padding: 15px;
@@ -257,18 +197,21 @@ button.uk-button.uk-button-default.popup_a {
 .product02{
     width:100%;
     padding: 15px;
-    margin-top: 15px;
     overflow-x: hidden;
 }
 .product03{
     width:100%;
     padding: 15px!important;
-    margin-top: 15px!important;
+    overflow-x: hidden;
+}
+.product04{
+    width:100%;
+    padding: 15px;
     overflow-x: hidden;
 }
 .product05{
-    width:100%;
-    padding: 15px!important; 
+    width: 100%;
+    padding: 15px;
     overflow-x: hidden;
 }
 .product06{
@@ -276,61 +219,77 @@ button.uk-button.uk-button-default.popup_a {
     padding: 15px!important; 
     overflow-x: hidden;
 }
+.product07{
+    width: 100%;
+    padding: 15px;
+    overflow-x: hidden;
+}
+.product08{
+    width: 100%;
+    padding: 15px;
+    overflow-x: hidden;
+}
 .popup1{
     position: absolute;
-    top: 462px !important;
-    left: 196px !important;
+    top: 226px !important;
+    left: 148px !important;
     width: 266px !important;
 }
 
 .popup2{
     position: absolute;
-    top: 703px !important;
-    left: 586px !important;
-    width: 266px !important;
-    
-
+    top: 242px !important;
+    left: 825px !important;
+    width: 204px !important;
 }
 
 .popup3{
     position: absolute;
-    top: 352px !important;
-    left: 322px !important;
-    width: 266px !important;
+    top: 782px !important;
+    left: 681px !important;
+    width: 214px !important;
 }
 
 .popup4{
     position: absolute;
-    top: 242px !important;
-    left: 691px !important;
-    width: 204px !important;
+    top: 492px !important;
+    left: 215px !important;
+    width: 252px !important;
 }
 
 .popup5{
     position: absolute;
-    top: 1065px !important;
-    left: 378px !important;
-    width: 204px !important;
+    top: 397px !important;
+    left: 807px !important;
+    width: 228px !important;
 }
 
 .popup6{
     position: absolute;
-    top: 371px !important;
-    left: 61px !important;
-    width: 204px !important;
+    top: 1111px !important;
+    left: 398px !important;
+    width: 228px !important;
 }
-.popup7{
+.popup7-1{
     position: absolute;
-    top: 318px !important;
-    left: 639px !important;
-    width: 204px !important;
+    top: 508px !important;
+    left: 42px !important;
+    width: 439px !important;
 }
+.popup7-2{
+    position: absolute;
+    top: -167px !important;
+    left: 217px !important;
+    width: 159px !important;
+}
+
 .popup8{
     position: absolute;
-    top: 279px !important;
-    left: 1016px !important;
-    width: 204px !important;
+    top: 298px !important;
+    left: 714px !important;
+    width: 252px !important;
 }
+
 .text-ani{
     position: absolute;
     top:0;
@@ -362,7 +321,7 @@ button.uk-button.uk-button-default.popup_a {
 .viewBox{ width: 100%; height: 360px;overflow-x:hidden ;}
 .slideBox{ width: 200%; height: 100%; display: flex; animation: flowText 20s linear infinite;overflow-x:hidden ;}
 .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center;overflow-x:hidden ;}
-.slideItem{ font-size: 2rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 5px; overflow-x: hidden;}
+.slideItem{ font-size: 2rem; font-weight:100px; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 5px; overflow-x: hidden;}
 
 @keyframes flowText {
     0% {transform: translateX(0);}
@@ -450,59 +409,125 @@ button.uk-button.uk-button-default.popup_a {
     .motion-this{ position: absolute; top: 34px; left: 198px; width: 227px;}
     .slideItem{ font-size: 1.5rem; font: weight :thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
     button.uk-button.uk-button-default.popup_a {border: hidden;     display: inline-flex;}  
+    .content-pop{
+        position: relative;
+        background: rgba(100, 100, 100, 0.8);
+        border-radius: .4em;
+        transition: all .2s;
+    }
     
-    .product01 { width: 400px; padding: 15px!important;   }   
-    .product02{ width:800px; padding: 15px!important; margin-top: 15px!important; }
-    .product03{ width: 400px; padding: 15px!important; margin-top: 15px!important;}
-    .product05{ width:800px; padding: 15px!important; }
-    .product06{ width: 260px;padding: 15px!important; }    
-    .popup1{ position: absolute;
-        top: 349px !important;
-        left: 499px !important;
-        width: 266px !important;
-    }  
+    .content-pop:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 20%;
+        width: 0;
+        height: 0;
+        border: 13px solid transparent;
+        border-bottom-color: rgba(100, 100, 100, 0.8);
+        border-top: 0;
+        margin-left: -13px;
+        margin-top: -13px;
+    }
+    .content-pop p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.125rem;
+        color: #ffffff;
+        line-height: 1; 
+        padding: 10px;
+       
+    }
+    
+    .product01{
+        width:400px !important;
+        padding: 10px!important;
+    }
+    .product02{
+        width:400px !important;
+        padding:10px!important;
+    }
+    .product03{
+        width: 800px !important;
+        padding: 10px!important;
+        margin-top: 10px!important;
+    }
+    .product04{
+        width:400px !important;
+        padding: 10px!important; 
+    }
+    .product05{
+        width:400px !important;
+        padding: 10px!important; 
+    }
+    .product06{
+        width:800px !important;
+        padding: 10px!important; 
+    }   
+    .product07{
+        width:400px !important;
+        padding: 10px!important; 
+    }
+    .product08{
+        width:400px!important;
+        padding: 10px!important; 
+    }    
+    .popup1 {
+        position: absolute;
+        top: 182px !important;
+        left: 123px !important;
+        width: 188px !important;
+    } 
     .popup2{
         position: absolute;
-        top: 610px !important;
-        left: 560px !important;
-        width: 230px !important; 
+        top: 230px !important;
+        left: 545px !important;
+        width: 175px !important;
+        }       
+    .popup3 {
+        position: absolute;
+        top: 595px !important;
+        left: 483px !important;
+        width: 108px !important;
     }
-    .popup3{
+    .popup4 {
         position: absolute;
-        top: 292px !important;
-        left: 199px !important;
-        width: 148px !important;
-    } 
-    .popup4{
-        position: absolute;
-        top: 267px !important;
-        left: 637px !important;
-        width: 252px !important;
+        top: 330px !important;
+        left: 108px !important;
+        width: 172px !important;
     }
-    .popup5{
+    .popup5 {
         position: absolute;
-        top: 831px !important;
-        left: 336px !important;
-        width: 204px !important;
+        top: 276px !important;
+        left: 573px !important;
+        width: 134px !important;
     }
     .popup6{
         position: absolute;
-        top: 282px !important;
-        left: 61px !important;
+        top: 803px !important;
+        left: 303px !important;
+        width: 120px !important;
+    }
+    .popup7-1{
+        position: absolute;
+        top: 362px !important;
+        left: 42px !important;
         width: 204px !important;
     }
-    .popup7{
+    .popup7-2{
         position: absolute;
-        top: 245px !important;
-        left: 394px !important;
-        width: 163px !important;
+        top: -92px !important;
+        left: 43px !important;
+        width: 203px !important;
     }
-    .popup8{
+    .popup8 {
         position: absolute;
-        top: 238px !important;
-        left: 706px !important;
-        width: 148px !important;
-    }
+        top: 205px !important;
+        left: 519px !important;
+        width: 85px !important;
+    }   
+    
 }
 /********************* Tablet / Mobile *********************/
 @media (max-width:1000px) {
@@ -575,8 +600,8 @@ button.uk-button.uk-button-default.popup_a {
     .bg-video {position: relative; width: 100%; height: 100%; margin: 0 auto; }
     button.uk-button.uk-button-default.popup_a { border: hidden;     display: contents;}
  
-    #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden}
-    .viewBox{ width: 100%; height: 100px; margin-top: 20px; overflow-x: hidden}
+    #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden;}
+    .viewBox{ width: 100%; height: 100px;  overflow-x: hidden;}
     .slideBox{ width: 400%; height: 100%; display: flex; animation: flowText 20s linear infinite; overflow-x: hidden}
     .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center; overflow-x: hidden}
     .slideItem{ font-size: 1.5rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
@@ -601,83 +626,100 @@ button.uk-button.uk-button-default.popup_a {
     }
     .content-pop p {
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 600;
         font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
+        font-size: 16px;
         color: #ffffff;
         line-height: 1; 
         padding: 10px;
     }
     .popup1 {
         position: absolute;
-        top: 323px !important;
-        left: 171px !important;
+        top: 182px !important;
+        left: 123px !important;
         width: 188px !important;
     } 
     .popup2{
         position: absolute;
-        top: 469px !important;
-        left: 414px !important;
+        top: 230px !important;
+        left: 545px !important;
         width: 175px !important;
         }       
     .popup3 {
         position: absolute;
-        top: 260px !important;
-        left: 258px !important;
+        top: 595px !important;
+        left: 483px !important;
         width: 108px !important;
     }
     .popup4 {
         position: absolute;
-        top: 185px !important;
-        left: 460px !important;
+        top: 330px !important;
+        left: 108px !important;
         width: 172px !important;
     }
     .popup5 {
         position: absolute;
-        top: 769px !important;
-        left: 275px !important;
+        top: 276px !important;
+        left: 573px !important;
         width: 134px !important;
     }
     .popup6{
         position: absolute;
-        top: 190px !important;
-        left: 54px !important;
+        top: 803px !important;
+        left: 303px !important;
         width: 120px !important;
     }
-    .popup7 {
+    .popup7-1{
         position: absolute;
-        top: 184px !important;
-        left: 379px !important;
-        width: 105px !important;
+        top: 362px !important;
+        left: 42px !important;
+        width: 204px !important;
+    }
+    .popup7-2{
+        position: absolute;
+        top: -92px !important;
+        left: 43px !important;
+        width: 203px !important;
     }
     .popup8 {
         position: absolute;
-        top: 165px !important;
-        left: 575px !important;
+        top: 205px !important;
+        left: 519px !important;
         width: 85px !important;
-    }      
+    }           
     .product01{
-        width: 35% !important;
-        padding: 5px!important;
+        width: 49% !important;
+        padding: 10px!important;
     }
-
     .product02{
-        width:71%!important;
-        padding: 7px!important;
+        width:49%!important;
+        padding:10px!important;
     }
     .product03{
-        width: 35%!important;
-        padding: 5px!important;
-        margin-top: 15px!important;
+        width: 98%!important;
+        padding: 10px!important;
+        margin-top: 10px!important;
+    }
+    .product04{
+        width:49%!important;
+        padding: 10px!important; 
     }
     .product05{
-        width:71%!important;
-        padding: 7px!important; 
+        width:49%!important;
+        padding: 10px!important; 
     }
     .product06{
-        width: 25%!important;
-        padding: 5px!important; 
-    }  
+        width: 98%!important;
+        padding: 10px!important; 
+    }   
+    .product07{
+        width:49%!important;
+        padding: 10px!important; 
+    }
+    .product08{
+        width:49%!important;
+        padding: 10px!important; 
+    }    
     .viewBox {
         overflow-x: hidden;}     
 } 
@@ -711,8 +753,9 @@ button.uk-button.uk-button-default.popup_a {
     .bg-video {position: relative;/* width: 100%; height: 100%; */margin: 0 auto; }
     .height1400{height: 600px;}
     /*foot 타이포 슬라이드 */
+    .footer-bt a{ font-size: 1.2em; padding: 10px 35px; margin-bottom:1.5em;}
     #content-slide{ margin: 0; padding: 0; box-sizing: border-box; overflow-x: hidden}
-    .viewBox{ width: 100%; height: 100px; margin-top: 20px; overflow-x: hidden}
+    .viewBox{ width: 100%; height: 100px; overflow-x: hidden;}
     .slideBox{ width: 500%; height: 100%; display: flex; animation: flowText 20s linear infinite; overflow-x: hidden}
     .leftBox, .rightBox{ width: 50%; height: 100%; display: flex; justify-content: space-around; align-items: center; overflow-x: hidden}
     .slideItem{ font-size: 1rem; font-weight:thin; color: #ffffff; font-family: 'Montserrat', sans-serif;letter-spacing: 2px; overflow-x: hidden}
@@ -749,63 +792,69 @@ button.uk-button.uk-button-default.popup_a {
     }
     .content-pop p {
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 500;
         font-family: 'Montserrat', sans-serif;
-        font-size: 13px;
+        font-size: 1rem;
         color: #ffffff;
         line-height: 1; 
         padding: 10px;
     }
     .popup1 {
         position: absolute;
-        top: 275px !important;
-        left: 92px !important;
+        top: 142px !important;
+        left: 52px !important;
         width: 188px !important;
     } 
     .popup2{
         position: absolute;
-        top: 438px !important;
-        left: 414px !important;
-        width: 175px !important;
+        top: 184px !important;
+        left: 444px !important;
+        width: 134px !important;
         }       
     .popup3 {
         position: absolute;
-        top: 227px !important;
-        left: 197px !important;
-        width: 95px !important;
+        top: 426px !important;
+        left: 346px !important;
+        width: 114px !important;
     }
 
     .popup4 {
         position: absolute;
-        top: 158px !important;
-        left: 399px !important;
+        top: 262px !important;
+        left: 76px !important;
         width: 182px !important;
     }
 
     .popup5 {
         position: absolute;
-        top: 648px !important;
-        left: 251px !important;
+        top: 250px !important;
+        left: 431px !important;
         width: 134px !important;
     }
 
     .popup6{
         position: absolute;
-        top: 138px !important;
-        left: 54px !important;
-        width: 120px !important;
+        top: 584px !important;
+        left: 220px !important;
+        width: 146px !important;
     }
 
-    .popup7 {
+    .popup7-1{
         position: absolute;
-        top: 133px !important;
-        left: 268px !important;
-        width: 94px !important;
+        top: 293px !important;
+        left: 30px !important;
+        width: 204px !important;
+    }
+    .popup7-2{
+        position: absolute;
+        top: -92px !important;
+        left: 43px !important;
+        width: 203px !important;
     }
     .popup8 {
         position: absolute;
-        top: 124px !important;
-        left: 443px !important;
+        top: 153px !important;
+        left: 411px !important;
         width: 85px !important;
     }      
     .product01{
@@ -813,22 +862,34 @@ button.uk-button.uk-button-default.popup_a {
         padding: 5px!important;
     }
     .product02{
-        width:1057px!important;
-        padding: 7px!important;
+        width:49%!important;
+        padding:5px!important;
     }
     .product03{
-        width: 49%!important;
+        width: 98%!important;
         padding: 5px!important;
-        margin-top: 15px!important;
+        margin-top: 5px!important;
+    }
+    .product04{
+        width:49%!important;
+        padding: 5px!important; 
     }
     .product05{
-        width:1057px!important;
-        padding: 7px!important; 
+        width:49%!important;
+        padding: 5px!important; 
     }
     .product06{
-        width: 30%!important;
+        width: 98%!important;
         padding: 5px!important; 
-    }       
+    }   
+    .product07{
+        width:49%!important;
+        padding: 5px!important; 
+    }
+    .product08{
+        width:49%!important;
+        padding: 5px!important; 
+    }    
     .step9-img{  margin-bottom: 100px;}
     .pro-mv {
         margin-top: 20px;}
@@ -892,88 +953,105 @@ button.uk-button.uk-button-default.popup_a {
                         margin-top: -13px;}
     .content-pop p {
                     text-transform: uppercase;
-                    font-weight: 300;
+                    font-weight: 500;
                     font-family: 'Montserrat', sans-serif;
-                    font-size: 13px;
+                    font-size: 15px;
                     color: #ffffff;
                     line-height: 1; 
                     padding: 10px;
                 }
-        .popup1 {
-            position: absolute;
-            top: 161px !important;
-            left: 34px !important;
-            width: 214px !important;
-        } 
-        .popup2{
-            position: absolute;
-            top: 279px !important;
-            left: 200px !important;
-            width: 121px !important;
-            }       
-        .popup3 {
-            position: absolute;
-            top: 142px !important;
-            left: 36px !important;
-            width: 165px !important;
-        }
-    
-        .popup4 {
-            position: absolute;
-            top: 126px !important;
-            left: 180px !important;
-            width: 160px !important;
-        }
-    
-        .popup5 {
-            position: absolute;
-            top: 350px !important;
-            left: 50px !important;
-            width: 149px !important;
-        }
-    
-        .popup6{
-            position: absolute;
-            top: 86px !important;
-            left: 6px !important;
-            width: 100px !important;
-        }
-    
-        .popup7 {
-            position: absolute;
-            top: 95px !important;
-            left: 128px !important;
-            width: 112px !important;
-        }
-        .popup8 {
-            position: absolute;
-            top: 77px !important;
-            left: 250px !important;
-            width: 95px !important;
-        }      
-        .product01{
-            width: 45% !important;
-            padding: 5px!important;
-        }
-    
-        .product02{
-            width:91%!important;
-            padding: 7px!important;
-        }
-        .product03{
-            width: 45%!important;
-            padding: 5px!important;
-            margin-top: 15px!important;
-        }
-        .product05{
-            width:91%!important;
-            padding: 7px!important; 
-        }
-        .product06{
-            width: 30%!important;
-            padding: 5px!important; 
-        }       
-    
+                .popup1 {
+                    position: absolute;
+                    top: 89px !important;
+                    left: 30px !important;
+                    width: 149px !important;
+                } 
+                .popup2{
+                    position: absolute;
+                    top: 92px !important;
+                    left: 264px !important;
+                    width: 114px !important;
+                    }       
+                .popup3 {
+                    position: absolute;
+                    top: 290px !important;
+                    left: 214px !important;
+                    width: 114px !important;
+                }
+            
+                .popup4 {
+                    position: absolute;
+                    top: 138px !important;
+                    left: 84px !important;
+                    width: 86px !important;
+                }
+            
+                .popup5 {
+                    position: absolute;
+                    top: 112px !important;
+                    left: 220px !important;
+                    width: 140px !important;
+                }
+            
+                .popup6{
+                    position: absolute;
+                    top: 373px !important;
+                    left: 120px !important;
+                    width: 146px !important;
+                }
+            
+                .popup7-1{
+                    position: absolute;
+                    top: 207px !important;
+                    left: 6px !important;
+                    width: 190px !important;
+                }
+                .popup7-2{
+                    position: absolute;
+                    top: -83px !important;
+                    left: 18px !important;
+                    width: 200px !important;
+                }
+                .popup8 {
+                    position: absolute;
+                    top: 115px !important;
+                    left: 256px !important;
+                    width: 85px !important;
+                }      
+                .product01{
+                    width: 49% !important;
+                    padding: 5px!important;
+                }
+                .product02{
+                    width:49%!important;
+                    padding:5px!important;
+                }
+                .product03{
+                    width: 98%!important;
+                    padding: 5px!important;
+                    margin-top: 5px!important;
+                }
+                .product04{
+                    width:49%!important;
+                    padding: 5px!important; 
+                }
+                .product05{
+                    width:49%!important;
+                    padding: 5px!important; 
+                }
+                .product06{
+                    width: 98%!important;
+                    padding: 5px!important; 
+                }   
+                .product07{
+                    width:49%!important;
+                    padding: 5px!important; 
+                }
+                .product08{
+                    width:49%!important;
+                    padding: 5px!important; 
+                }                
+       
     }
 
     @media (max-width:360px) {

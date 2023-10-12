@@ -12,10 +12,11 @@
   
   <script src="common/uikit.min.js"></script>
   <script src="common/uikit-icons.min.js"></script>
-
- 
+  
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -29,7 +30,7 @@
                 <div uk-navbar>
                   <div class="uk-navbar-center">
                     <ul class="uk-navbar-nav">
-                      <a class="uk-logo" href="https://www.vogue.co.kr/" target="_top"><img src="vogue_logo.png" alt="vogue" width="183" height="47" /></a>
+                      <a class="uk-logo" href="https://www.vogue.co.kr/" target="_top"><img src="images/vogue_logo.png" alt="vogue" width="183" height="47" /></a>
                     </ul>
                   </div>
                 </div>
@@ -42,7 +43,7 @@
         
     <!-- SECTION 1 브랜드 영상 -->  
     <div class="section-main uk-section-expand">
-        <iframe src="https://player.vimeo.com/video/870174332?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1280" height="720" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay" uk-video="automute: true autoplay: inview"></iframe>
+        <iframe src="https://player.vimeo.com/video/873651711?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1280" height="720" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay" uk-video="automute: true autoplay: inview"></iframe>
     </div>
 
   
@@ -60,7 +61,7 @@
           <div class="section-main uk-section-expand">
               <div class="scroll-text scroll-width">
                   <div class="step2-video">
-                        <iframe src="https://player.vimeo.com/video/870174498?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1280" height="720" frameborder="0" allowfullscreen="" uk-responsive=""  allow="autoplay" uk-video="automute: true autoplay: inview"></iframe>
+                        <iframe src="https://player.vimeo.com/video/873652152?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1280" height="720" frameborder="0" allowfullscreen="" uk-responsive=""  allow="autoplay" uk-video="automute: true autoplay: inview"></iframe>
                         <p class="step-txt " uk-scrollspy="cls: uk-animation-slide-bottom; repeat: true; delay: 300;">
                           MZ는 다르다. ‘힙하게’ 다르다. 어느 하나 힙하지 않은 구석이 없다.
                           힙한 것들의 공통점은 ‘취향의 남다름’. MZ들은 폰 케이스 하나를 선택해도 남다른데,
@@ -89,7 +90,7 @@
           <!-- SECTION 3 모션그래픽 영상 -->  
           <div class="section-main uk-container-expand">               
               <div class="step3-video uk-scrollspy-inview">
-                  <iframe src="https://player.vimeo.com/video/870174582?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" 
+                  <iframe src="https://player.vimeo.com/video/873652536?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" 
                   width="1032" height="1032" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;"></iframe>
                   <!--video src="mp4/section3.mp4"autoplay loop muted playsinline uk-video="autoplay: inview" preload="none" class="uk-scrollspy-inview " uk-scrollspy="cls: uk-animation-scale-up; repeat: true; delay: 300;"></video-->
               </div>
@@ -98,18 +99,18 @@
 
           <!-- SECTION 4 제품 슬라이드 -->  
           <div class="uk-container-expand section-main" style="overflow-x: hidden;">
-            <div class="case-slider" style="overflow-x: hidden;">
-              <section class="case-design slider" style="overflow-x: hidden;">
-                  <div class="slide"><img src="images/01.png" width="500px" height="251px;" alt=""></div>
-                  <div class="slide"><img src="images/02.png" width="500px" height="251px;" alt=""></div>
-                  <div class="slide"><img src="images/03.png" width="500px" height="229px;"  alt=""></div>
-                  <div class="slide"><img src="images/04.png" width="500px" height="251px;" alt=""></div>
-                  <div class="slide"><img src="images/05.png" width="500px" height="251px;" alt=""></div>
-                  <div class="slide"><img src="images/06.png" width="500px" height="251px;" alt=""></div>
-                  <div class="slide"><img src="images/07.png" width="500px" height="251px;" alt=""></div>
-                  <div class="slide"><img src="images/08.png" width="500px" height="251px;" alt=""></div>      
-              </section>
-            </div>
+              <div class="swiper section-slider">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/01.png"></div>
+                    <div class="swiper-slide"><img src="images/02.png"></div>
+                    <div class="swiper-slide"><img src="images/03.png"></div>
+                    <div class="swiper-slide"><img src="images/04.png"></div>
+                    <div class="swiper-slide"><img src="images/05.png"></div>
+                    <div class="swiper-slide"><img src="images/06.png"></div>
+                    <div class="swiper-slide"><img src="images/07.png"></div>
+                    <div class="swiper-slide"><img src="images/08.png"></div>
+                </div>
+            </div>    
           </div>
 
 
@@ -122,67 +123,99 @@
 
         
           <!-- SECTION 6 모델 제품 컷 시작 --> 
-                <!-- 이미지 2컷 (Product1)-->
+                <!-- 이미지 2컷 (Product1/2)-->
                 <div class="uk-container-expand section-main">
-                    <div class="uk-inline flex-container">
-                        <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false">
-                            <img src="images/product1.jpg" class="uk-scrollspy-inview product01" uk-scrollspy="cls: uk-animation-slide-left-medium; delay: 300; repeat: true" >
-                            <img src="images/product2.jpg" class="product01" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 600; repeat: true"> 
-                          </button>
-                          
-                        <div uk-drop="mode: click" class="popup1">
-                            <div class="content-pop">
-                                <a href="https://www.casetify.com/product/bumblebee-pendant-case#/16004761" target="_blank"> 
-                                    <p><b>Bumblebee Pendant</b>
-                                      <br>₩105000</p></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>  
+                  <div class="uk-button-group">
+                      <div class="uk-inline">
+                          <!-- Product1 -->  
+                          <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0; ">
+                            <img src="images/product1.jpg" class="product01 uk-scrollspy-inview uk-animation-slide-left-small" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300; repeat: true" > 
+                          </button>    
+                    
+                          <div uk-drop="mode: hover" class="popup1">
+                              <div class="content-pop">
+                                <a href="https://cst.fyi/7IwHN" target="_blank"> 
+                                  <p>2-in-1 Utility Lanyard-Black</p></a>
+                              </div>
+                          </div>
 
-                <!-- 이미지 1컷 (Product2) -->
+                          <!-- Product2 -->
+                          <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0; ">
+                            <img src="images/product2.jpg" class="product02" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 300; repeat: true"> </button>
+                          
+                            <div uk-drop="mode: hover" class="popup2">
+                              <div class="content-pop">
+                                <a href="https://cst.fyi/laqzL" target="_blank"> 
+                                  <p>Bumblebee pendant</p></a>
+                              </div>
+                          </div>
+                      </div>     
+                  </div>
+              </div>     
+
+
+                <!-- 이미지 1컷 (Product3) -->
                 <div class="uk-container-expand section-main">
                     <div class="uk-inline flex-container">
-                        <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false">
-                          <img src="images/product3.jpg" class="product02" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;"/>
+                        <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0;">
+                          <img src="images/product3.jpg" class="product03" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;"/>
                         </button>
 
-                        <div uk-drop="mode: click" class="popup2">
+                        <div uk-drop="mode: hover" class="popup3">
                             <div class="content-pop">
-                              <a href="https://www.casetify.com/product/chrome-doodles-case#/16005982" target="_blank"> 
-                                  <p><b>Chrome Doodles</b>
-                                    <br>₩83000</p></a>
+                              <a href="https://cst.fyi/ZSsAQ" target="_blank"> 
+                                  <p>Chrome Doodles</p></a>
                             </div>
                         </div>
                     </div>
-                </div>        
+                </div>      
+                
+                
+        <!-- SECTION 타이포 슬라이드 1 -->
+        <div class="uk-section uk-container-expand section-main " id="content-slide">
+          <div class="viewBox">
+            <div class="slideBox">
+                <div class="leftBox">
+                    <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
+                    <div class="slideItem"><b>CHARACTER</b> VS <b>CASETiFY</b></div>
+                    <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
 
-                <!-- 이미지 2컷 (Product 3/4) -->
+                </div>
+                <div class="rightBox">
+                    <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
+                    <div class="slideItem"><b>CHARACTER</b> VS <b>CASETiFY</b></div>
+                    <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+
+
+                <!-- 이미지 2컷 (Product 4/5) -->
                 <div class="uk-container-expand section-main">
                     <div class="uk-button-group">
                         <div class="uk-inline">
-                            <!-- Product3 -->  
-                            <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0; ">
-                              <img src="images/product4.jpg" class="product03 uk-scrollspy-inview uk-animation-slide-left-small" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300; repeat: true" > 
+                            <!-- Product4 -->  
+                            <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0;">
+                              <img src="images/product4.jpg" class="product04 uk-scrollspy-inview uk-animation-slide-left-small" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300; repeat: true" > 
                             </button>    
                       
-                            <div uk-drop="mode: click" class="popup3">
+                            <div uk-drop="mode: hover" class="popup4">
                                 <div class="content-pop">
                                   <a href="https://www.casetify.com/ko_KR/product/phone-case-customization/iphone-15-pro-max/magsafe-compatible-impact-case#/16006196" target="_blank"> 
-                                    <p><b>Custom Phone Case</b>
-                                        <br>₩83000</p></a>
+                                    <p>Custom Phone Case</p></a>
                                 </div>
                             </div>
 
-                            <!-- Product4 -->
-                            <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0; ">
-                              <img src="images/product_4.jpg" class="product03" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 300; repeat: true"> </button>
+                            <!-- Product5 -->
+                            <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0;">
+                              <img src="images/product5.jpg" class="product05" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 300; repeat: true"> </button>
                             
-                              <div uk-drop="mode: click" class="popup4">
+                              <div uk-drop="mode: hover" class="popup5">
                                 <div class="content-pop">
                                   <a href="https://www.casetify.com/ko_KR/product/acid-flowers-case/iphone-15-pro-max/magsafe-compatible-impact-case#/16005982" target="_blank"> 
-                                    <p><b>The Wabi-Sabi Case MagSafe Compatible</b>
-                                      <br></p></a>
+                                    <p>The Wabi-Sabi Case MagSafe Compatible</p></a>
                                 </div>
                             </div>
                         </div>     
@@ -190,96 +223,65 @@
                 </div>     
 
                 
-        <!-- SECTION 타이포 슬라이드 1 -->
-            <div class="uk-section uk-container-expand section-main " id="content-slide">
-              <div class="viewBox">
-                <div class="slideBox">
-                    <div class="leftBox">
-                        <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
-                        <div class="slideItem"><b>CHARACTER</b> VS <b>CASETiFY</b></div>
-                        <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
-
-                    </div>
-                    <div class="rightBox">
-                        <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
-                        <div class="slideItem"><b>CHARACTER</b> VS <b>CASETiFY</b></div>
-                        <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
-
-                    </div>
-                </div>
-              </div>
-            </div>
-
-                <!-- 이미지 1컷 (Product5) -->
+                <!-- 이미지 1컷 (Product6) -->
                 <div class="uk-container-expand section-main">
                     <div class="uk-inline flex-container">
-                        <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false">
-                            <img src="images/product5.jpg" class="product05" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;" style="margin-top: 30px;"/>
+                        <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0;">
+                            <img src="images/product6.jpg" class="product06" uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;">
                         </button>
 
-                        <div uk-drop="mode: click" class="popup5">
+                        <div uk-drop="mode: hover" class="popup6">
                             <div class="content-pop">
-                                <a href="https://www.casetify.com/ko_KR/product/chrome-love/iphone-15-pro-max/magsafe-compatible-impact-case#/16005982" target="_blank"> 
-                                  <p><b>Chrome Love</b>
-                                     <br>₩83000</p></a>
+                                <a href="https://cst.fyi/hkbqe" target="_blank"> 
+                                  <p>Chrome Love</p></a>
                             </div>
                         </div>
                     </div>
                 </div>     
 
-                <!-- 이미지 3컷 (Product 6/7/8)-->
+                <!-- 이미지 2컷 (Product 7/8)-->
                 <div class="uk-container-expand section-main">
-                    <div class="uk-button-group">
-                        <div class="uk-inline">
-                          <!--product6--> 
-                          <button class="uk-button uk-button-default popup_a" type="button"  style="padding:0; ">
-                              <img src="images/product6.jpg" class="product06 uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top-medium; delay: 300; repeat: true"> 
+                  <div class="uk-button-group">
+                      <div class="uk-inline">
+                          <!-- Product7 -->  
+                          <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false" style="padding:0;">
+                            <img src="images/product7.jpg" class="product07 uk-scrollspy-inview uk-animation-slide-left-small" uk-scrollspy="cls: uk-animation-slide-left-small; delay: 300; repeat: true" > 
                           </button>    
-                        
-                          <div uk-drop="mode: click" class="popup6">
+                          <div uk-drop="mode: hover" class="popup7-1">
                               <div class="content-pop">
-                                <a href="https://www.casetify.com/ko_KR/product/acid-flowers-case/iphone-15-pro-max/magsafe-compatible-impact-case#/16005982" target="_blank"> 
-                                  <p><b>Acid Flowers</b>
-                                    <br>₩83000</p></a>
-                              </div>
-                           </div>
-
-                          <!--product7-->
-                          <button class="uk-button uk-button-default popup_a" type="button"  style="padding:0; ">
-                              <img src="images/product7.jpg" class="product06 uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-bottom-medium; delay: 600; repeat: true"> 
-                          </button>
+                                <a href="https://cst.fyi/Z8nPw" target="_blank"> 
+                                  <p>Custom Phone Case – Magsafe Impact Ring Stand Case</p></a>
+                              
+                              <div class="popup7-2">
+                                <div class="content-pop">
+                                  <a href="https://cst.fyi/wfO3m" target="_blank"> 
+                                    <p>You’re My Butterfly Snappy Grip Stand</p></a>
+                                </div>
+                              </div> 
+                              </div> 
+                          </div>
                           
-                          <div uk-drop="mode: click" class="popup7">
-                            <div class="content-pop">
-                              <a href="https://www.casetify.com/ko_KR/product/polar-zebra-case/iphone-15-pro-max/magsafe-compatible-impact-case#/16005984" target="_blank"> 
-                                <p><b>Polar Zebra</b>
-                                  <br>₩83000</p></a>
-                            </div>
-                          </div>
 
-                          <!--product8-->
-                          <button class="uk-button uk-button-default popup_a" type="button"  style="padding:0; ">
-                             <img src="images/product8.jpg" class="product06 uk-scrollspy-inview" uk-scrollspy="cls: uk-animation-slide-top-medium; delay; delay: 1000; repeat: true">
-                          </button>
-                        
-                          <div uk-drop="mode: click" class="popup8">
-                            <div class="content-pop">
-                              <a href="https://www.casetify.com/product/Cherries-case#/16005982" target="_blank"> 
-                                <p><b>Cherries</b>
-                                  <br>₩83000</p></a>
-                            </div>
+                          <!-- Product8 -->
+                          <button class="uk-button uk-button-default popup_a" type="button" aria-expanded="false"  style="padding:0;">
+                            <img src="images/product8.jpg" class="product08" uk-scrollspy="cls: uk-animation-slide-right-medium; delay: 300; repeat: true"> </button>
+                          
+                            <div uk-drop="mode: hover" class="popup8">
+                              <div class="content-pop">
+                                <a href="https://cst.fyi/dL25d" target="_blank"> 
+                                  <p>Polar Zebra</p></a>
+                              </div>
                           </div>
-
-                        </div>     
-                    </div>
-                 </div>     
+                      </div>     
+                  </div>
+              </div>     
 
         <!-- SECTION 타이포 슬라이드 2 -->
             <div class="uk-section uk-container-expand section-main " id="content-slide">
               <div class="viewBox">
                 <div class="slideBox">
                     <div class="leftBox">
-                        <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
+                        <div class="slideItem"> <b>CHARACTER</b> VS <b>CASET<span style="lowercase">i</span>FY</b></div>
                         <div class="slideItem"><b>CHARACTER</b> VS <b>CASETiFY</b></div>
                         <div class="slideItem"> <b>CHARACTER</b> VS <b>CASETiFY</b></div>
 
@@ -298,7 +300,7 @@
           <!-- SECTION 7 제품 단독 영상 -->  
           <div class="section-main uk-container-expand">               
             <div class="uk-margin-xlarge-bottom uk-scrollspy-inview pro-mv">
-              <iframe uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;" src="https://player.vimeo.com/video/870174711?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1032" height="1032" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay"></iframe>
+              <iframe uk-scrollspy="cls: uk-animation-slide-bottom-medium; repeat: true; delay: 300;" src="https://player.vimeo.com/video/873652892?player_id=player_2&muted=1&autoplay=1&loop=1&autopause=0&byline=1&background=1" width="1032" height="1032" frameborder="0" allowfullscreen="" uk-responsive="" class="uk-responsive-width" allow="autoplay"></iframe>
             </div>
           </div>
 
@@ -311,36 +313,29 @@
 
           <!-- Footer 브랜드 페이지 -->
             <div class="footer section-main uk-container-expand">
-              <a class="uk-align-center" href="https://www.casetify.com/"><img src="images/casetify-logo.png" alt="casetify"></a>
+              <a class="uk-align-center" href="https://www.casetify.com/collection/iphone-15-prints?
+              utm_source=vogue&utm_medium=vogue&utm_campaign=iphone15&utm_term=20231012_iphone15_vogue_kr"><img src="images/casetify-logo.png" alt="casetify"></a>
+              <div class="footer-btn"><a class="uk-button " href="https://www.casetify.com/collection/iphone-15-prints?
+                utm_source=vogue&utm_medium=vogue&utm_campaign=iphone15&utm_term=20231012_iphone15_vogue_kr" target="_blank">
+                홈페이지 바로가기</a>
+              </div>
             </div>
-    </div> 
+          <!-- 홈페이지 바로가기 버튼 -->
+     
+      </div>
 
-      <script>
-      $(document).ready(function(){
-          $('.case-design').slick({
-              slidesPerRow:1,
-              infinite:true,
-              slidesToShow: 6,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoplaySpeed: 1000,
-              arrows: false,
-              dots: false,
-              pauseOnHover: false,
-              responsive: [{
-                  breakpoint: 768,
-                  settings: {
-                      slidesToShow: 6
-                  }
-              }, {
-                  breakpoint: 480,
-                  settings: {
-                      slidesToShow: 2
-                  }
-              }]
-          });
-      });
-
-      </script>
+ <script>
+    const swiper = new Swiper('.section-slider', {
+        loop: true,
+        speed: 2000,
+        slidesPerView: 5,      
+        autoplay: {
+            delay: 0,
+            //pauseOnMouseEnter: true,        // stop autoplay when hovering
+            disableOnInteraction: false,    // restart autoplay when hover is removed
+            //reverseDirection: true,         // reverse the autoplay direction
+        },
+    })
+</script>
   </body>
 </html>
